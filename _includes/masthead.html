@@ -1,0 +1,30 @@
+<nav class="nav" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+
+    <a href="{{ '/' | relative_url }}" class="nav-logo">
+      {{ site.author.name | split: " " | first }} <span>{{ site.author.name | split: " " | last }}</span>
+    </a>
+
+    <ul class="nav-links" id="nav-links">
+      <li>
+        <a href="{{ '/' | relative_url }}" class="lang-en{% if page.permalink == '/' %} active{% endif %}">Home</a>
+        <a href="{{ '/' | relative_url }}" class="lang-zh{% if page.permalink == '/' %} active{% endif %}">主页</a>
+      </li>
+      {% for link in site.data.navigation.main %}
+      <li>
+        <a href="{{ link.url | relative_url }}" class="lang-en{% if page.url contains link.url %} active{% endif %}">{{ link.title }}</a>
+        <a href="{{ link.url | relative_url }}" class="lang-zh{% if page.url contains link.url %} active{% endif %}">{{ link.title_zh | default: link.title }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+
+    <div class="nav-controls">
+      <button class="nav-btn lang-btn lang-toggle" aria-label="Switch language">中</button>
+      <button class="nav-btn theme-toggle" aria-label="Toggle theme">◑</button>
+      <button class="nav-hamburger" aria-expanded="false" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+  </div>
+</nav>

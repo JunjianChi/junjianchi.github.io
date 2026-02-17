@@ -1,0 +1,98 @@
+# ============================================================
+# Site Settings
+# ============================================================
+title: "Junjian Chi"
+name: "Junjian Chi"
+description: "Personal website of Junjian Chi"
+url: "https://junjianchi.github.io"
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:categories/:title/
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-redirect-from
+  - jekyll-seo-tag
+
+# ============================================================
+# Author (used by sidebar / author-profile)
+# ============================================================
+author:
+  name: "Junjian Chi"
+  name_zh: "迟峻健"
+  avatar: "/images/profile.png"
+  bio: "MRes Student"
+  bio_zh: "硕士研究生"
+  location: "Cambridge, UK"
+  affiliation: "Sensor CDT, University of Cambridge"
+  affiliation_zh: "剑桥大学 传感器技术博士培训中心"
+  affiliation_url: "https://cdt.sensors.cam.ac.uk/"
+  supervisor: "Dr. Yu Wu"
+  supervisor_url: "https://profiles.ucl.ac.uk/45781"
+  group: "Sensors, Systems and Circuits"
+  group_url: "https://www.ucl.ac.uk/engineering/electronic-electrical-engineering/research/sensors-systems-and-circuits"
+  email: "junjian.chi@example.com"
+  github: "junjianchi"
+  linkedin: "junjianchi"
+  googlescholar: ""
+  orcid: ""
+
+# ============================================================
+# Collections
+# ============================================================
+collections:
+  publications:
+    output: true
+    permalink: /publication/:path
+  projects:
+    output: true
+    permalink: /project/:path
+  news:
+    output: false
+
+# ============================================================
+# Defaults
+# ============================================================
+defaults:
+  - scope:
+      path: ""
+      type: "publications"
+    values:
+      layout: "single"
+      author_profile: true
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "single"
+      author_profile: true
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "single"
+      author_profile: true
+  - scope:
+      path: "_pages"
+      type: "pages"
+    values:
+      layout: "default"
+      author_profile: true
+
+# Reading files
+include:
+  - _pages
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .claude
+  - README.md
+  - LICENSE

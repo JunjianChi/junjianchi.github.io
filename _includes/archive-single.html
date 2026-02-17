@@ -1,0 +1,69 @@
+{% comment %}
+  Renders a single item in an archive list.
+  Used by publications, projects, blog posts.
+
+  Variables:
+    post  - the item from the collection
+    type  - "publication", "project", or "post"
+{% endcomment %}
+
+{% if type == "publication" %}
+<!-- Publication Card -->
+<div class="pub-card">
+  <h3 class="pub-title">
+    {% if post.permalink %}<a href="{{ post.url | relative_url }}">{{ post.title }}</a>{% else %}{{ post.title }}{% endif %}
+  </h3>
+  {% if post.authors %}<p class="pub-authors">{{ post.authors }}</p>{% endif %}
+  {% if post.venue %}<p class="pub-venue">{{ post.venue }}{% if post.date %}, {{ post.date | date: "%Y" }}{% endif %}</p>{% endif %}
+  {% if post.excerpt and post.show_excerpt %}<p class="pub-excerpt">{{ post.excerpt | strip_html | truncate: 200 }}</p>{% endif %}
+  <div class="pub-links">
+    {% if post.paperurl %}<a href="{{ post.paperurl }}" class="pub-link" target="_blank">Paper</a>{% endif %}
+    {% if post.slidesurl %}<a href="{{ post.slidesurl }}" class="pub-link" target="_blank">Slides</a>{% endif %}
+    {% if post.codeurl %}<a href="{{ post.codeurl }}" class="pub-link" target="_blank">Code</a>{% endif %}
+    {% if post.bibtex %}<a href="{{ post.bibtex }}" class="pub-link" target="_blank">BibTeX</a>{% endif %}
+  </div>
+</div>
+
+{% elsif type == "project" %}
+<!-- Project Card -->
+<div class="project-card">
+  {% if post.cover %}
+  <img src="{{ post.cover | relative_url }}" alt="{{ post.title }}" class="project-img" />
+  {% else %}
+  <div class="project-img-placeholder"></div>
+  {% endif %}
+  <div class="project-body">
+    {% if post.tags.size > 0 %}
+    <p class="project-tag">{{ post.tags | first }}</p>
+    {% endif %}
+    <h3 class="project-title">
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    </h3>
+    {% if post.summary %}<p class="project-desc">{{ post.summary }}</p>{% endif %}
+    <div class="project-links">
+      {% if post.github %}<a href="{{ post.github }}" class="pub-link" target="_blank">GitHub</a>{% endif %}
+      {% if post.paperurl %}<a href="{{ post.paperurl }}" class="pub-link" target="_blank">Paper</a>{% endif %}
+      {% if post.demo %}<a href="{{ post.demo }}" class="pub-link" target="_blank">Demo</a>{% endif %}
+    </div>
+  </div>
+</div>
+
+{% else %}
+<!-- Blog Post Card -->
+<div class="blog-card">
+  <div class="blog-card-body">
+    <div class="blog-meta">
+      <span class="blog-date">{{ post.date | date: "%Y.%m.%d" }}</span>
+      {% if post.category %}<span class="blog-category">{{ post.category }}</span>{% endif %}
+    </div>
+    <h3 class="blog-title">
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    </h3>
+    {% if post.excerpt %}<p class="blog-excerpt">{{ post.excerpt | strip_html | truncate: 160 }}</p>{% endif %}
+    <a href="{{ post.url | relative_url }}" class="blog-read-more">
+      <span class="lang-en">Read more &rarr;</span>
+      <span class="lang-zh">阅读更多 &rarr;</span>
+    </a>
+  </div>
+</div>
+{% endif %}

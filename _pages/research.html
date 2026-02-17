@@ -1,0 +1,96 @@
+---
+layout: archive
+title: "Research"
+title_zh: "研究"
+permalink: /research/
+author_profile: true
+---
+
+<!-- PUBLICATIONS -->
+<section class="home-section">
+  <h2 class="home-section-title">
+    <span class="lang-en">Publications</span>
+    <span class="lang-zh">发表论文</span>
+  </h2>
+
+  {% assign sorted_pubs = site.publications | sort: "date" | reverse %}
+  {% if sorted_pubs.size > 0 %}
+  <div class="pub-list">
+    {% for post in sorted_pubs %}
+      {% include archive-single.html type="publication" %}
+    {% endfor %}
+  </div>
+  {% else %}
+  <p class="home-section-text" style="font-style: italic;">
+    <span class="lang-en">Publications coming soon.</span>
+    <span class="lang-zh">论文即将发布。</span>
+  </p>
+  {% endif %}
+</section>
+
+<!-- PROJECTS -->
+<section class="home-section">
+  <h2 class="home-section-title">
+    <span class="lang-en">Projects</span>
+    <span class="lang-zh">项目</span>
+  </h2>
+
+  {% assign sorted_projects = site.projects | sort: "order" %}
+  {% if sorted_projects.size > 0 %}
+  <div class="projects-grid">
+    {% for post in sorted_projects %}
+      {% include archive-single.html type="project" %}
+    {% endfor %}
+  </div>
+  {% else %}
+  <p class="home-section-text" style="font-style: italic;">
+    <span class="lang-en">Projects coming soon.</span>
+    <span class="lang-zh">项目即将发布。</span>
+  </p>
+  {% endif %}
+</section>
+
+<!-- SKILLS -->
+<section class="home-section">
+  <h2 class="home-section-title">
+    <span class="lang-en">Skills &amp; Tools</span>
+    <span class="lang-zh">技能与工具</span>
+  </h2>
+
+  <div class="skills-grid">
+    <div class="skill-group">
+      <h4>Programming</h4>
+      <div class="skill-tags">
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">MATLAB</span>
+        <span class="skill-tag">C/C++</span>
+        <span class="skill-tag">Verilog</span>
+      </div>
+    </div>
+    <div class="skill-group">
+      <h4>ML / AI</h4>
+      <div class="skill-tags">
+        <span class="skill-tag">PyTorch</span>
+        <span class="skill-tag">TensorFlow</span>
+        <span class="skill-tag">scikit-learn</span>
+      </div>
+    </div>
+    <div class="skill-group">
+      <h4>Hardware / EDA</h4>
+      <div class="skill-tags">
+        <span class="skill-tag">Cadence</span>
+        <span class="skill-tag">Vivado</span>
+        <span class="skill-tag">LTspice</span>
+        <span class="skill-tag">Altium</span>
+      </div>
+    </div>
+    <div class="skill-group">
+      <h4>Other</h4>
+      <div class="skill-tags">
+        <span class="skill-tag">Git</span>
+        <span class="skill-tag">Linux</span>
+        <span class="skill-tag">LaTeX</span>
+      </div>
+    </div>
+  </div>
+</section>

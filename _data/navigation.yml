@@ -1,0 +1,10 @@
+main:
+  - title: "Research"
+    title_zh: "研究"
+    url: /research/
+  - title: "Blog"
+    title_zh: "博客"
+    url: /blog/
+  - title: "Photography"
+    title_zh: "摄影"
+    url: /photography/

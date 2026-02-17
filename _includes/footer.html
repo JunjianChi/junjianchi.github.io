@@ -1,0 +1,16 @@
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p class="footer-text">
+      <span class="lang-en">&copy; {{ site.time | date: "%Y" }} {{ site.author.name }}</span>
+      <span class="lang-zh">&copy; {{ site.time | date: "%Y" }} {{ site.author.name_zh }}</span>
+    </p>
+    <nav class="footer-links">
+      <a href="{{ '/' | relative_url }}" class="lang-en">Home</a>
+      <a href="{{ '/' | relative_url }}" class="lang-zh">主页</a>
+      {% for link in site.data.navigation.main %}
+      <a href="{{ link.url | relative_url }}" class="lang-en">{{ link.title }}</a>
+      <a href="{{ link.url | relative_url }}" class="lang-zh">{{ link.title_zh | default: link.title }}</a>
+      {% endfor %}
+    </nav>
+  </div>
+</footer>

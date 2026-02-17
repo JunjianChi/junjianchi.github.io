@@ -1,0 +1,84 @@
+// ============================================
+// RESPONSIVE
+// ============================================
+
+@media (max-width: 768px) {
+  .page-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .page-sidebar {
+    position: static;
+  }
+
+  .author-profile {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .author-avatar {
+    width: 90px; height: 90px;
+    margin-bottom: 0;
+  }
+
+  .author-name {
+    font-size: 1.05rem;
+  }
+
+  .author-links {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: var(--nav-height);
+    left: 0; right: 0;
+    background: var(--bg-nav);
+    backdrop-filter: blur(12px);
+    flex-direction: column;
+    padding: 16px 24px;
+    gap: 14px;
+    border-bottom: 1px solid var(--border-subtle);
+    transform: translateY(-100%);
+    opacity: 0;
+    pointer-events: none;
+    transition: all var(--transition);
+    &.open {
+      transform: translateY(0);
+      opacity: 1;
+      pointer-events: all;
+    }
+  }
+
+  .nav-hamburger { display: flex; }
+
+  .projects-grid { grid-template-columns: 1fr; }
+  .blog-grid { grid-template-columns: 1fr; }
+  .photo-grid { columns: 2 180px; }
+
+  .edu-item,
+  .highlight-list li {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+
+  .footer-links { justify-content: center; }
+}
+
+@media (max-width: 480px) {
+  .container { padding: 0 16px; }
+  .photo-grid { columns: 1; }
+  .skills-grid { grid-template-columns: 1fr; }
+  h1 { font-size: 1.5rem; }
+}

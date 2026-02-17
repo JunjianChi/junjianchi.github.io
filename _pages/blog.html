@@ -1,0 +1,35 @@
+---
+layout: archive
+title: "Blog"
+title_zh: "博客"
+permalink: /blog/
+author_profile: true
+---
+
+<div class="blog-notice">
+  <span>&#9998;</span>
+  <p>
+    <span class="lang-en">
+      Personal thoughts. Not a press release.
+      This is a notebook — random reflections, things I find interesting, and notes to myself.
+    </span>
+    <span class="lang-zh">
+      个人随想，非正式公告。
+      这是一本笔记——随想、觉得有趣的事、以及写给自己的备忘。
+    </span>
+  </p>
+</div>
+
+{% assign sorted_posts = site.posts | sort: "date" | reverse %}
+{% if sorted_posts.size > 0 %}
+<div class="blog-grid">
+  {% for post in sorted_posts %}
+    {% include archive-single.html type="post" %}
+  {% endfor %}
+</div>
+{% else %}
+<p class="home-section-text" style="font-style: italic;">
+  <span class="lang-en">Blog posts coming soon.</span>
+  <span class="lang-zh">博客文章即将发布。</span>
+</p>
+{% endif %}

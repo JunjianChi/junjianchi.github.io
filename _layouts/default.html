@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" data-lang="en">
+<head>
+  {% include head.html %}
+</head>
+<body>
+
+  {% include masthead.html %}
+
+  <main class="page-main">
+    <div class="container page-grid">
+
+      {% if page.author_profile %}
+      <aside class="page-sidebar">
+        {% include author-profile.html %}
+      </aside>
+      {% endif %}
+
+      <article class="page-content{% unless page.author_profile %} full-width{% endunless %}">
+        {% if page.title and page.show_title != false %}
+        <h1 class="page-heading">
+          <span class="lang-en">{{ page.title }}</span>
+          {% if page.title_zh %}
+          <span class="lang-zh">{{ page.title_zh }}</span>
+          {% endif %}
+        </h1>
+        {% endif %}
+
+        {{ content }}
+      </article>
+
+    </div>
+  </main>
+
+  {% include footer.html %}
+  {% include scripts.html %}
+
+</body>
+</html>
