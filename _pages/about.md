@@ -120,7 +120,7 @@ show_title: false
         <img src="{{ '/images/ucl-logo.png' | relative_url }}" alt="UCL" />
       </div>
       <div class="edu-detail">
-        <p class="edu-school">University College London (UCL)</p>
+        <p class="edu-school">University College London</p>
         <p class="edu-meta">2022 &mdash; 2025 &middot; London, UK</p>
         <p class="edu-degree">
           <span class="lang-en">BEng Electrical &amp; Electronic Engineering</span>
