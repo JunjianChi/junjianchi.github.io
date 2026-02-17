@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" data-lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-en="Research — Junjian Chi" data-zh="研究 — 迟峻健">Research — Junjian Chi</title>
+  <meta name="description" content="Research, publications and projects by Junjian Chi." />
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <script>
+    (function() {
+      var theme = localStorage.getItem('jc-theme') ||
+        (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      var lang = localStorage.getItem('jc-lang') ||
+        (navigator.language.startsWith('zh') ? 'zh' : 'en');
+      document.documentElement.setAttribute('data-theme', theme);
+      document.documentElement.setAttribute('data-lang', lang);
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="nav" role="navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Junjian <span>Chi</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="lang-en">Home</a><a href="index.html" class="lang-zh">主页</a></li>
+        <li><a href="research.html" class="lang-en active">Research</a><a href="research.html" class="lang-zh active">研究</a></li>
+        <li><a href="blog.html" class="lang-en">Blog</a><a href="blog.html" class="lang-zh">博客</a></li>
+        <li><a href="photography.html" class="lang-en">Photography</a><a href="photography.html" class="lang-zh">摄影</a></li>
+      </ul>
+      <div class="nav-controls">
+        <button class="nav-btn lang-btn lang-toggle" aria-label="Switch language">中</button>
+        <button class="nav-btn theme-toggle" aria-label="Toggle theme">◑</button>
+        <button class="nav-hamburger" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- ========== PAGE HEADER ========== -->
+    <div style="padding: 120px 0 60px; background: var(--bg-secondary); border-bottom: 1px solid var(--border-subtle);">
+      <div class="container">
+        <p style="font-size: 0.8rem; color: var(--accent); font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 12px;">
+          <span class="lang-en">Research</span>
+          <span class="lang-zh">研究</span>
+        </p>
+        <h1 style="font-family: var(--font-serif); font-size: 2.4rem; color: var(--text-primary); margin-bottom: 16px;">
+          <span class="lang-en">Publications &amp; Projects</span>
+          <span class="lang-zh">发表论文与项目</span>
+        </h1>
+        <p style="font-size: 1rem; color: var(--text-muted); max-width: 560px; line-height: 1.8;">
+          <span class="lang-en">
+            My work explores signal processing, RF systems, and the application of machine learning
+            to communications and sensing problems.
+          </span>
+          <span class="lang-zh">
+            我的研究涵盖信号处理、射频系统，以及机器学习在通信与感知领域的应用。
+          </span>
+        </p>
+      </div>
+    </div>
+
+    <!-- ========== PUBLICATIONS ========== -->
+    <section class="section" id="publications">
+      <div class="container">
+        <h2 class="section-title">
+          <span class="lang-en">Publications</span>
+          <span class="lang-zh">学术发表</span>
+        </h2>
+
+        <div class="pub-list reveal">
+
+          <!-- Publication template — duplicate and fill in -->
+          <div class="pub-card fade-in">
+            <p class="pub-title">
+              <span class="lang-en">
+                [Your Paper Title Here] — A Study in Signal Processing
+              </span>
+              <span class="lang-zh">
+                [论文标题] — 信号处理研究
+              </span>
+            </p>
+            <p class="pub-authors">
+              <span class="lang-en">
+                <strong>Junjian Chi</strong>, Co-author A, Co-author B
+              </span>
+              <span class="lang-zh">
+                <strong>迟峻健</strong>, 合著者 A, 合著者 B
+              </span>
+            </p>
+            <p class="pub-venue">
+              <span class="lang-en">Venue / Conference / Journal — 2025</span>
+              <span class="lang-zh">会议/期刊名称 — 2025</span>
+            </p>
+            <div class="pub-links">
+              <a href="#" class="pub-link">
+                <span class="lang-en">Paper</span>
+                <span class="lang-zh">论文</span>
+              </a>
+              <a href="#" class="pub-link">arXiv</a>
+              <a href="#" class="pub-link">
+                <span class="lang-en">Code</span>
+                <span class="lang-zh">代码</span>
+              </a>
+              <a href="#" class="pub-link">
+                <span class="lang-en">Slides</span>
+                <span class="lang-zh">幻灯片</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Empty state message -->
+          <div style="padding: 48px; text-align: center; border: 1px dashed var(--border); border-radius: var(--radius-md);">
+            <p style="color: var(--text-muted); font-style: italic; font-size: 0.95rem;">
+              <span class="lang-en">More publications coming soon. Stay tuned!</span>
+              <span class="lang-zh">更多论文即将发布，敬请期待！</span>
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PROJECTS ========== -->
+    <section class="section" id="projects" style="background: var(--bg-secondary);">
+      <div class="container">
+        <h2 class="section-title">
+          <span class="lang-en">Projects</span>
+          <span class="lang-zh">项目经历</span>
+        </h2>
+
+        <div class="projects-grid reveal">
+
+          <!-- Project Card 1 -->
+          <div class="project-card fade-in">
+            <div class="project-img-placeholder" style="height: 160px;">🔬</div>
+            <div class="project-body">
+              <p class="project-tag">
+                <span class="lang-en">Signal Processing</span>
+                <span class="lang-zh">信号处理</span>
+              </p>
+              <h3 class="project-title">
+                <span class="lang-en">Final Year Thesis Project</span>
+                <span class="lang-zh">毕业设计项目</span>
+              </h3>
+              <p class="project-desc">
+                <span class="lang-en">Details to be updated. This is a placeholder for your thesis project description.</span>
+                <span class="lang-zh">详情待更新。这是毕业论文项目描述的占位符。</span>
+              </p>
+              <div class="project-links">
+                <a href="#" class="btn btn-outline" style="font-size: 0.8rem; padding: 7px 14px;">
+                  <span class="lang-en">GitHub</span>
+                  <span class="lang-zh">代码仓库</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 2 -->
+          <div class="project-card fade-in">
+            <div class="project-img-placeholder" style="height: 160px;">📡</div>
+            <div class="project-body">
+              <p class="project-tag">RF Systems</p>
+              <h3 class="project-title">
+                <span class="lang-en">Qualcomm Internship Project</span>
+                <span class="lang-zh">高通实习项目</span>
+              </h3>
+              <p class="project-desc">
+                <span class="lang-en">Research project at Qualcomm focusing on RF system design and signal analysis. Summer 2024.</span>
+                <span class="lang-zh">高通实习期间的研究项目，专注于射频系统设计与信号分析。2024年夏。</span>
+              </p>
+              <div class="project-links">
+                <a href="https://www.ucl.ac.uk/engineering/news/2024/oct/qualcomm-internships-support-eee-students-toward-research-excellence"
+                   class="btn btn-outline" style="font-size: 0.8rem; padding: 7px 14px;"
+                   target="_blank" rel="noopener">
+                  <span class="lang-en">Read More</span>
+                  <span class="lang-zh">了解更多</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 3 -->
+          <div class="project-card fade-in">
+            <div class="project-img-placeholder" style="height: 160px;">🤖</div>
+            <div class="project-body">
+              <p class="project-tag">
+                <span class="lang-en">Machine Learning</span>
+                <span class="lang-zh">机器学习</span>
+              </p>
+              <h3 class="project-title">
+                <span class="lang-en">ML for Communications</span>
+                <span class="lang-zh">通信中的机器学习</span>
+              </h3>
+              <p class="project-desc">
+                <span class="lang-en">Course/lab project applying deep learning techniques to channel estimation or modulation classification.</span>
+                <span class="lang-zh">课程/实验项目，将深度学习技术应用于信道估计或调制识别。</span>
+              </p>
+              <div class="project-links">
+                <a href="#" class="btn btn-outline" style="font-size: 0.8rem; padding: 7px 14px;">
+                  <span class="lang-en">GitHub</span>
+                  <span class="lang-zh">代码仓库</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SKILLS / TOOLS ========== -->
+    <section class="section" id="skills">
+      <div class="container">
+        <h2 class="section-title">
+          <span class="lang-en">Tools &amp; Skills</span>
+          <span class="lang-zh">技能工具</span>
+        </h2>
+
+        <div class="reveal" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px; margin-top: 8px;">
+
+          <div class="stat-card fade-in" style="text-align: left;">
+            <p style="font-size: 0.75rem; font-weight: 600; color: var(--accent); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 12px;">
+              <span class="lang-en">Programming</span>
+              <span class="lang-zh">编程语言</span>
+            </p>
+            <div style="display: flex; flex-wrap: wrap; gap: 6px;">
+              <span class="tag">Python</span>
+              <span class="tag">MATLAB</span>
+              <span class="tag">C/C++</span>
+              <span class="tag">Verilog</span>
+            </div>
+          </div>
+
+          <div class="stat-card fade-in" style="text-align: left;">
+            <p style="font-size: 0.75rem; font-weight: 600; color: var(--accent); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 12px;">
+              <span class="lang-en">ML / AI</span>
+              <span class="lang-zh">机器学习</span>
+            </p>
+            <div style="display: flex; flex-wrap: wrap; gap: 6px;">
+              <span class="tag">PyTorch</span>
+              <span class="tag">TensorFlow</span>
+              <span class="tag">scikit-learn</span>
+            </div>
+          </div>
+
+          <div class="stat-card fade-in" style="text-align: left;">
+            <p style="font-size: 0.75rem; font-weight: 600; color: var(--accent); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 12px;">
+              <span class="lang-en">Hardware / EDA</span>
+              <span class="lang-zh">硬件/EDA</span>
+            </p>
+            <div style="display: flex; flex-wrap: wrap; gap: 6px;">
+              <span class="tag">Cadence</span>
+              <span class="tag">Vivado</span>
+              <span class="tag">LTspice</span>
+              <span class="tag">Altium</span>
+            </div>
+          </div>
+
+          <div class="stat-card fade-in" style="text-align: left;">
+            <p style="font-size: 0.75rem; font-weight: 600; color: var(--accent); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 12px;">
+              <span class="lang-en">Other</span>
+              <span class="lang-zh">其他</span>
+            </p>
+            <div style="display: flex; flex-wrap: wrap; gap: 6px;">
+              <span class="tag">Git</span>
+              <span class="tag">Linux</span>
+              <span class="tag">LaTeX</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <p class="footer-text">
+        <span class="lang-en">© 2025 Junjian Chi. Built with care.</span>
+        <span class="lang-zh">© 2025 迟峻健. 用心搭建。</span>
+      </p>
+      <nav class="footer-links">
+        <a href="index.html" class="lang-en">Home</a>
+        <a href="index.html" class="lang-zh">主页</a>
+        <a href="blog.html" class="lang-en">Blog</a>
+        <a href="blog.html" class="lang-zh">博客</a>
+        <a href="photography.html" class="lang-en">Photography</a>
+        <a href="photography.html" class="lang-zh">摄影</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

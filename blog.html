@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" data-lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-en="Blog — Junjian Chi" data-zh="博客 — 迟峻健">Blog — Junjian Chi</title>
+  <meta name="description" content="Personal thoughts and writings by Junjian Chi." />
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <script>
+    (function() {
+      var theme = localStorage.getItem('jc-theme') ||
+        (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      var lang = localStorage.getItem('jc-lang') ||
+        (navigator.language.startsWith('zh') ? 'zh' : 'en');
+      document.documentElement.setAttribute('data-theme', theme);
+      document.documentElement.setAttribute('data-lang', lang);
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="nav" role="navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Junjian <span>Chi</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="lang-en">Home</a><a href="index.html" class="lang-zh">主页</a></li>
+        <li><a href="research.html" class="lang-en">Research</a><a href="research.html" class="lang-zh">研究</a></li>
+        <li><a href="blog.html" class="lang-en active">Blog</a><a href="blog.html" class="lang-zh active">博客</a></li>
+        <li><a href="photography.html" class="lang-en">Photography</a><a href="photography.html" class="lang-zh">摄影</a></li>
+      </ul>
+      <div class="nav-controls">
+        <button class="nav-btn lang-btn lang-toggle" aria-label="Switch language">中</button>
+        <button class="nav-btn theme-toggle" aria-label="Toggle theme">◑</button>
+        <button class="nav-hamburger" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- ========== PAGE HEADER ========== -->
+    <div class="blog-header">
+      <h1 style="font-family: var(--font-serif);">
+        <span class="lang-en">Blog</span>
+        <span class="lang-zh">博客</span>
+      </h1>
+      <p>
+        <span class="lang-en">Personal thoughts. Not a press release.</span>
+        <span class="lang-zh">个人想法，不是新闻稿。</span>
+      </p>
+    </div>
+
+    <div class="container" style="padding-bottom: 80px;">
+
+      <!-- Notice about what this blog is -->
+      <div class="blog-notice reveal">
+        <span class="blog-notice-icon">📝</span>
+        <p>
+          <span class="lang-en">
+            This is my personal notebook — research musings, things I'm learning, places I've been.
+            For official news about me (like
+            <a href="https://www.ucl.ac.uk/engineering/news/2024/oct/qualcomm-internships-support-eee-students-toward-research-excellence" target="_blank" rel="noopener">UCL press coverage</a>),
+            check the <a href="index.html#news">Updates</a> section on the home page.
+          </span>
+          <span class="lang-zh">
+            这是我的私人笔记本——研究感悟、正在学习的事物、去过的地方。
+            关于我的官方新闻（如
+            <a href="https://www.ucl.ac.uk/engineering/news/2024/oct/qualcomm-internships-support-eee-students-toward-research-excellence" target="_blank" rel="noopener">UCL媒体报道</a>），
+            请查看主页的<a href="index.html#news">动态</a>版块。
+          </span>
+        </p>
+      </div>
+
+      <!-- ========== BLOG GRID ========== -->
+      <div class="blog-grid reveal">
+
+        <!-- Post 1 -->
+        <article class="blog-card fade-in">
+          <div class="blog-card-body">
+            <div class="blog-meta">
+              <span class="blog-date">
+                <span class="lang-en">Feb 2025</span>
+                <span class="lang-zh">2025年2月</span>
+              </span>
+              <span class="blog-category">
+                <span class="lang-en">Thoughts</span>
+                <span class="lang-zh">随想</span>
+              </span>
+            </div>
+            <h2 class="blog-title">
+              <span class="lang-en">On Learning to Let Research Be Slow</span>
+              <span class="lang-zh">学会让研究慢下来</span>
+            </h2>
+            <p class="blog-excerpt">
+              <span class="lang-en">
+                There's a pressure in engineering to always have something to show. A circuit working,
+                a model converging, a result to report. But the most important thinking often happens
+                in between those moments — on a walk, staring at a whiteboard, or just sitting with
+                a problem that won't yield.
+              </span>
+              <span class="lang-zh">
+                工程领域存在一种压力，要求你总是有成果展示——电路调通了、模型收敛了、有结果可以汇报。
+                但最重要的思考往往发生在这些时刻之间——散步时、盯着白板时，
+                或者只是静静地坐着，面对一个暂时无解的问题。
+              </span>
+            </p>
+            <span class="blog-read-more">
+              <span class="lang-en">Read more →</span>
+              <span class="lang-zh">继续阅读 →</span>
+            </span>
+          </div>
+        </article>
+
+        <!-- Post 2 -->
+        <article class="blog-card fade-in">
+          <div class="blog-card-body">
+            <div class="blog-meta">
+              <span class="blog-date">
+                <span class="lang-en">Jan 2025</span>
+                <span class="lang-zh">2025年1月</span>
+              </span>
+              <span class="blog-category">
+                <span class="lang-en">Internship</span>
+                <span class="lang-zh">实习</span>
+              </span>
+            </div>
+            <h2 class="blog-title">
+              <span class="lang-en">What I Actually Learned at Qualcomm (Beyond the CV Line)</span>
+              <span class="lang-zh">在高通真正学到的东西（超越简历那一行）</span>
+            </h2>
+            <p class="blog-excerpt">
+              <span class="lang-en">
+                Everyone asks "what did you work on?" but rarely "what surprised you?" The actual
+                work was interesting — RF signal analysis, real hardware constraints. But what stuck
+                with me more was watching how experienced engineers think through uncertainty.
+              </span>
+              <span class="lang-zh">
+                大家都问"你做了什么项目？"，却很少有人问"什么让你出乎意料？"
+                工作本身很有趣——射频信号分析、真实的硬件约束。
+                但让我印象更深的是，观察有经验的工程师如何在不确定性中思考。
+              </span>
+            </p>
+            <span class="blog-read-more">
+              <span class="lang-en">Read more →</span>
+              <span class="lang-zh">继续阅读 →</span>
+            </span>
+          </div>
+        </article>
+
+        <!-- Post 3 -->
+        <article class="blog-card fade-in">
+          <div class="blog-card-body">
+            <div class="blog-meta">
+              <span class="blog-date">
+                <span class="lang-en">Dec 2024</span>
+                <span class="lang-zh">2024年12月</span>
+              </span>
+              <span class="blog-category">
+                <span class="lang-en">Reading</span>
+                <span class="lang-zh">阅读</span>
+              </span>
+            </div>
+            <h2 class="blog-title">
+              <span class="lang-en">Notes on "The Art of Doing Science and Engineering"</span>
+              <span class="lang-zh">读书笔记：《科学与工程的艺术》</span>
+            </h2>
+            <p class="blog-excerpt">
+              <span class="lang-en">
+                Hamming's book is a strange mix of career advice, mathematics, and mild provocation.
+                The underlying question — "What are the most important problems in your field and
+                why aren't you working on them?" — has been bouncing around in my head since I
+                first encountered it.
+              </span>
+              <span class="lang-zh">
+                汉明的书是职业建议、数学与轻微挑衅的奇妙混合。
+                其中那个核心问题——"你所在领域最重要的问题是什么，为什么你没在研究它？"——
+                自从我第一次读到它，就一直在我脑海中萦绕。
+              </span>
+            </p>
+            <span class="blog-read-more">
+              <span class="lang-en">Read more →</span>
+              <span class="lang-zh">继续阅读 →</span>
+            </span>
+          </div>
+        </article>
+
+        <!-- Post 4 -->
+        <article class="blog-card fade-in">
+          <div class="blog-card-body">
+            <div class="blog-meta">
+              <span class="blog-date">
+                <span class="lang-en">Nov 2024</span>
+                <span class="lang-zh">2024年11月</span>
+              </span>
+              <span class="blog-category">
+                <span class="lang-en">City</span>
+                <span class="lang-zh">城市</span>
+              </span>
+            </div>
+            <h2 class="blog-title">
+              <span class="lang-en">London at 6am Is a Different City</span>
+              <span class="lang-zh">早上六点的伦敦是另一座城市</span>
+            </h2>
+            <p class="blog-excerpt">
+              <span class="lang-en">
+                I started taking early morning walks with a camera when the deadline stress got bad.
+                The city before the commute is quieter, stranger, more honest somehow. Favourite
+                spot so far: the South Bank just before the tourists arrive.
+              </span>
+              <span class="lang-zh">
+                我开始在截止日期压力很大时，带着相机在清晨散步。
+                通勤前的城市更安静、更奇特，也更真实。
+                目前最喜欢的地点：游客涌来之前的南岸。
+              </span>
+            </p>
+            <span class="blog-read-more">
+              <span class="lang-en">Read more →</span>
+              <span class="lang-zh">继续阅读 →</span>
+            </span>
+          </div>
+        </article>
+
+        <!-- Post 5 -->
+        <article class="blog-card fade-in">
+          <div class="blog-card-body">
+            <div class="blog-meta">
+              <span class="blog-date">
+                <span class="lang-en">Oct 2024</span>
+                <span class="lang-zh">2024年10月</span>
+              </span>
+              <span class="blog-category">
+                <span class="lang-en">ML</span>
+                <span class="lang-zh">机器学习</span>
+              </span>
+            </div>
+            <h2 class="blog-title">
+              <span class="lang-en">Why I Find Channel Estimation Surprisingly Interesting</span>
+              <span class="lang-zh">为什么我觉得信道估计出奇地有趣</span>
+            </h2>
+            <p class="blog-excerpt">
+              <span class="lang-en">
+                On paper, channel estimation sounds boring — just figure out how the channel distorts
+                your signal, correct for it, move on. In practice it's a wonderful little problem that
+                touches statistics, optimization, and increasingly, deep learning.
+              </span>
+              <span class="lang-zh">
+                从纸面上看，信道估计听起来很无聊——搞清楚信道如何失真信号，纠正，继续。
+                实际上它是个绝妙的小问题，涉及统计学、优化，以及越来越多的深度学习。
+              </span>
+            </p>
+            <span class="blog-read-more">
+              <span class="lang-en">Read more →</span>
+              <span class="lang-zh">继续阅读 →</span>
+            </span>
+          </div>
+        </article>
+
+        <!-- Post 6 -->
+        <article class="blog-card fade-in">
+          <div class="blog-card-body">
+            <div class="blog-meta">
+              <span class="blog-date">
+                <span class="lang-en">Sep 2024</span>
+                <span class="lang-zh">2024年9月</span>
+              </span>
+              <span class="blog-category">
+                <span class="lang-en">Misc</span>
+                <span class="lang-zh">杂记</span>
+              </span>
+            </div>
+            <h2 class="blog-title">
+              <span class="lang-en">Starting Final Year: A Note to Myself</span>
+              <span class="lang-zh">开始最后一年：写给自己的一封信</span>
+            </h2>
+            <p class="blog-excerpt">
+              <span class="lang-en">
+                This is mostly for me to look back on. The ambition is to finish well, to actually
+                enjoy the thesis process rather than just survive it, and to remember that I'm
+                doing this because I'm curious about something.
+              </span>
+              <span class="lang-zh">
+                这主要是为了将来回望。我的心愿是出色地完成这一年，真正享受写论文的过程，
+                而不只是熬过去——并且记住，我做这些是因为我对某件事情感到好奇。
+              </span>
+            </p>
+            <span class="blog-read-more">
+              <span class="lang-en">Read more →</span>
+              <span class="lang-zh">继续阅读 →</span>
+            </span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <p class="footer-text">
+        <span class="lang-en">© 2025 Junjian Chi. Built with care.</span>
+        <span class="lang-zh">© 2025 迟峻健. 用心搭建。</span>
+      </p>
+      <nav class="footer-links">
+        <a href="index.html" class="lang-en">Home</a>
+        <a href="index.html" class="lang-zh">主页</a>
+        <a href="research.html" class="lang-en">Research</a>
+        <a href="research.html" class="lang-zh">研究</a>
+        <a href="photography.html" class="lang-en">Photography</a>
+        <a href="photography.html" class="lang-zh">摄影</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" data-lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-en="Photography — Junjian Chi" data-zh="摄影 — 迟峻健">Photography — Junjian Chi</title>
+  <meta name="description" content="Photography by Junjian Chi — architecture, street, and travel." />
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <style>
+    /* Extra styles for photo placeholder grids */
+    .photo-item-placeholder {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3rem;
+      color: var(--accent);
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Varied heights for visual interest */
+    .ph-tall { height: 320px; }
+    .ph-medium { height: 220px; }
+    .ph-short { height: 160px; }
+
+    /* Photo grid item background gradients */
+    .ph-1 { background: linear-gradient(135deg, #C8D8E8 0%, #8AAABB 100%); }
+    .ph-2 { background: linear-gradient(135deg, #D8E8D0 0%, #8AB09A 100%); }
+    .ph-3 { background: linear-gradient(135deg, #E8D8C8 0%, #C09070 100%); }
+    .ph-4 { background: linear-gradient(135deg, #D0D8F0 0%, #8090CC 100%); }
+    .ph-5 { background: linear-gradient(135deg, #F0D8D8 0%, #C08888 100%); }
+    .ph-6 { background: linear-gradient(135deg, #D8D0E8 0%, #9080B8 100%); }
+    .ph-7 { background: linear-gradient(135deg, #E8ECD0 0%, #A8AA80 100%); }
+    .ph-8 { background: linear-gradient(135deg, #C8E4E8 0%, #70A8B8 100%); }
+    .ph-9 { background: linear-gradient(135deg, #E8E0D0 0%, #B0A080 100%); }
+  </style>
+
+  <script>
+    (function() {
+      var theme = localStorage.getItem('jc-theme') ||
+        (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      var lang = localStorage.getItem('jc-lang') ||
+        (navigator.language.startsWith('zh') ? 'zh' : 'en');
+      document.documentElement.setAttribute('data-theme', theme);
+      document.documentElement.setAttribute('data-lang', lang);
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="nav" role="navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Junjian <span>Chi</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="lang-en">Home</a><a href="index.html" class="lang-zh">主页</a></li>
+        <li><a href="research.html" class="lang-en">Research</a><a href="research.html" class="lang-zh">研究</a></li>
+        <li><a href="blog.html" class="lang-en">Blog</a><a href="blog.html" class="lang-zh">博客</a></li>
+        <li><a href="photography.html" class="lang-en active">Photography</a><a href="photography.html" class="lang-zh active">摄影</a></li>
+      </ul>
+      <div class="nav-controls">
+        <button class="nav-btn lang-btn lang-toggle" aria-label="Switch language">中</button>
+        <button class="nav-btn theme-toggle" aria-label="Toggle theme">◑</button>
+        <button class="nav-hamburger" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- ========== PAGE HEADER ========== -->
+    <div class="photo-header">
+      <h1 style="font-family: var(--font-serif);">
+        <span class="lang-en">Photography</span>
+        <span class="lang-zh">摄影</span>
+      </h1>
+      <p>
+        <span class="lang-en">Slowing down. Really seeing.</span>
+        <span class="lang-zh">慢下来，真正看见。</span>
+      </p>
+    </div>
+
+    <div class="container" style="padding-bottom: 80px;">
+
+      <!-- ========== FILTER TABS ========== -->
+      <div class="photo-filters reveal">
+        <button class="filter-btn active" data-filter="all">
+          <span class="lang-en">All</span>
+          <span class="lang-zh">全部</span>
+        </button>
+        <button class="filter-btn" data-filter="architecture">
+          <span class="lang-en">Architecture</span>
+          <span class="lang-zh">建筑</span>
+        </button>
+        <button class="filter-btn" data-filter="street">
+          <span class="lang-en">Street</span>
+          <span class="lang-zh">街头</span>
+        </button>
+        <button class="filter-btn" data-filter="landscape">
+          <span class="lang-en">Landscape</span>
+          <span class="lang-zh">风景</span>
+        </button>
+        <button class="filter-btn" data-filter="travel">
+          <span class="lang-en">Travel</span>
+          <span class="lang-zh">旅行</span>
+        </button>
+      </div>
+
+      <!-- ========== PHOTO MASONRY GRID ========== -->
+      <!-- Replace placeholder divs with real <img> tags as you add photos -->
+      <!-- Format: <img src="assets/images/photos/your-photo.jpg" alt="Caption" /> -->
+
+      <div class="photo-grid reveal">
+
+        <div class="photo-item" data-category="architecture">
+          <div class="photo-item-placeholder ph-1 ph-tall">🏛</div>
+          <div class="photo-overlay">
+            <span class="photo-caption lang-en">London — South Bank</span>
+            <span class="photo-caption lang-zh">伦敦 · 南岸</span>
+          </div>
+        </div>
+
+        <div class="photo-item" data-category="street">
+          <div class="photo-item-placeholder ph-2 ph-medium">🌆</div>
+          <div class="photo-overlay">
+            <span class="photo-caption lang-en">London — Early Morning</span>
+            <span class="photo-caption lang-zh">伦敦 · 清晨</span>
+          </div>
+        </div>
+
+        <div class="photo-item" data-category="landscape">
+          <div class="photo-item-placeholder ph-3 ph-medium">🌄</div>
+          <div class="photo-overlay">
+            <span class="photo-caption lang-en">Countryside</span>
+            <span class="photo-caption lang-zh">乡野</span>
+          </div>
+        </div>
+
+        <div class="photo-item" data-category="travel">
+          <div class="photo-item-placeholder ph-4 ph-short">✈</div>
+          <div class="photo-overlay">
+            <span class="photo-caption lang-en">Travel</span>
+            <span class="photo-caption lang-zh">旅途</span>
+          </div>
+        </div>
+
+        <div class="photo-item" data-category="architecture">
+          <div class="photo-item-placeholder ph-5 ph-tall">🗼</div>
+          <div class="photo-overlay">
+            <span class="photo-caption lang-en">Architecture — Details</span>
+            <span class="photo-caption lang-zh">建筑细节</span>
+          </div>
+        </div>
+
+        <div class="photo-item" data-category="street">
+          <div class="photo-item-placeholder ph-6 ph-medium">📷</div>
+          <div class="photo-overlay">
+            <span class="photo-caption lang-en">Street — Candid</span>
+            <span class="photo-caption lang-zh">街头 · 抓拍</span>
+          </div>
+        </div>
+
+        <div class="photo-item" data-category="landscape">
+          <div class="photo-item-placeholder ph-7 ph-medium">🌿</div>
+          <div class="photo-overlay">
+            <span class="photo-caption lang-en">Nature</span>
+            <span class="photo-caption lang-zh">自然</span>
+          </div>
+        </div>
+
+        <div class="photo-item" data-category="travel">
+          <div class="photo-item-placeholder ph-8 ph-short">🗺</div>
+          <div class="photo-overlay">
+            <span class="photo-caption lang-en">On the Road</span>
+            <span class="photo-caption lang-zh">在路上</span>
+          </div>
+        </div>
+
+        <div class="photo-item" data-category="architecture">
+          <div class="photo-item-placeholder ph-9 ph-medium">🏙</div>
+          <div class="photo-overlay">
+            <span class="photo-caption lang-en">Urban Geometry</span>
+            <span class="photo-caption lang-zh">城市几何</span>
+          </div>
+        </div>
+
+        <div class="photo-item" data-category="street">
+          <div class="photo-item-placeholder ph-3 ph-tall">🌃</div>
+          <div class="photo-overlay">
+            <span class="photo-caption lang-en">Night — City Lights</span>
+            <span class="photo-caption lang-zh">夜晚 · 城市灯光</span>
+          </div>
+        </div>
+
+        <div class="photo-item" data-category="landscape">
+          <div class="photo-item-placeholder ph-1 ph-short">☁</div>
+          <div class="photo-overlay">
+            <span class="photo-caption lang-en">Sky Study</span>
+            <span class="photo-caption lang-zh">天空研究</span>
+          </div>
+        </div>
+
+        <div class="photo-item" data-category="travel">
+          <div class="photo-item-placeholder ph-5 ph-medium">🌏</div>
+          <div class="photo-overlay">
+            <span class="photo-caption lang-en">Somewhere Far</span>
+            <span class="photo-caption lang-zh">某处远方</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Instructions for adding real photos -->
+      <div style="margin-top: 48px; padding: 20px 24px; background: var(--accent-light); border: 1px dashed var(--border); border-radius: var(--radius-md);">
+        <p style="font-size: 0.85rem; color: var(--text-muted); font-style: italic; margin: 0;">
+          <span class="lang-en">
+            📸 To add your own photos: place images in <code style="background: var(--bg-card); padding: 2px 6px; border-radius: 4px;">assets/images/photos/</code>
+            and replace the placeholder divs with <code style="background: var(--bg-card); padding: 2px 6px; border-radius: 4px;">&lt;img src="..."&gt;</code> tags.
+          </span>
+          <span class="lang-zh">
+            📸 添加你的照片：将图片放入 <code style="background: var(--bg-card); padding: 2px 6px; border-radius: 4px;">assets/images/photos/</code>，
+            然后将占位符替换为 <code style="background: var(--bg-card); padding: 2px 6px; border-radius: 4px;">&lt;img src="..."&gt;</code> 标签。
+          </span>
+        </p>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ========== LIGHTBOX ========== -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer">
+    <div class="lightbox-content">
+      <button class="lightbox-close" aria-label="Close">✕</button>
+      <img class="lightbox-img" src="" alt="" />
+      <p class="lightbox-caption"></p>
+    </div>
+  </div>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <p class="footer-text">
+        <span class="lang-en">© 2025 Junjian Chi. Built with care.</span>
+        <span class="lang-zh">© 2025 迟峻健. 用心搭建。</span>
+      </p>
+      <nav class="footer-links">
+        <a href="index.html" class="lang-en">Home</a>
+        <a href="index.html" class="lang-zh">主页</a>
+        <a href="research.html" class="lang-en">Research</a>
+        <a href="research.html" class="lang-zh">研究</a>
+        <a href="blog.html" class="lang-en">Blog</a>
+        <a href="blog.html" class="lang-zh">博客</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

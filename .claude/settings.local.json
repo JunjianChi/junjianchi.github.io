@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:github.com)",
+      "Bash(gh api:*)",
+      "Bash(python:*)",
+      "Bash(gh auth status:*)",
+      "WebFetch(domain:api.github.com)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:www.ucl.ac.uk)",
+      "WebFetch(domain:cdt.sensors.cam.ac.uk)",
+      "mcp__ide__getDiagnostics"
+    ]
+  }
+}
