@@ -8,19 +8,31 @@
 {% endcomment %}
 
 {% if type == "publication" %}
-<!-- Publication Card -->
+<!-- Publication Card — image left, info right -->
 <div class="pub-card">
-  <h3 class="pub-title">
-    {% if post.permalink %}<a href="{{ post.url | relative_url }}">{{ post.title }}</a>{% else %}{{ post.title }}{% endif %}
-  </h3>
-  {% if post.authors %}<p class="pub-authors">{{ post.authors }}</p>{% endif %}
-  {% if post.venue %}<p class="pub-venue">{{ post.venue }}{% if post.date %}, {{ post.date | date: "%Y" }}{% endif %}</p>{% endif %}
-  {% if post.excerpt and post.show_excerpt %}<p class="pub-excerpt">{{ post.excerpt | strip_html | truncate: 200 }}</p>{% endif %}
-  <div class="pub-links">
-    {% if post.paperurl %}<a href="{{ post.paperurl }}" class="pub-link" target="_blank">Paper</a>{% endif %}
-    {% if post.slidesurl %}<a href="{{ post.slidesurl }}" class="pub-link" target="_blank">Slides</a>{% endif %}
-    {% if post.codeurl %}<a href="{{ post.codeurl }}" class="pub-link" target="_blank">Code</a>{% endif %}
-    {% if post.bibtex %}<a href="{{ post.bibtex }}" class="pub-link" target="_blank">BibTeX</a>{% endif %}
+  <div class="pub-thumb">
+    {% if post.cover %}
+    <img src="{{ post.cover | relative_url }}" alt="{{ post.title }}" />
+    {% else %}
+    <div class="pub-thumb-placeholder"></div>
+    {% endif %}
+  </div>
+  <div class="pub-info">
+    <h3 class="pub-title">
+      {% if post.permalink %}<a href="{{ post.url | relative_url }}">{{ post.title }}</a>{% else %}{{ post.title }}{% endif %}
+    </h3>
+    {% if post.authors %}<p class="pub-authors">{{ post.authors }}</p>{% endif %}
+    {% if post.venue %}<p class="pub-venue">{{ post.venue }}{% if post.date %}, {{ post.date | date: "%Y" }}{% endif %}</p>{% endif %}
+    {% if post.award %}<p class="pub-award">{{ post.award }}</p>{% endif %}
+    {% if post.tldr %}<p class="pub-tldr"><strong>tl;dr:</strong> {{ post.tldr }}</p>{% endif %}
+    <div class="pub-links">
+      {% if post.paperurl %}<a href="{{ post.paperurl }}" class="pub-link" target="_blank">Paper</a>{% endif %}
+      {% if post.arxiv %}<a href="{{ post.arxiv }}" class="pub-link" target="_blank">arXiv</a>{% endif %}
+      {% if post.projectpage %}<a href="{{ post.projectpage }}" class="pub-link" target="_blank">Project</a>{% endif %}
+      {% if post.codeurl %}<a href="{{ post.codeurl }}" class="pub-link" target="_blank">Code</a>{% endif %}
+      {% if post.slidesurl %}<a href="{{ post.slidesurl }}" class="pub-link" target="_blank">Slides</a>{% endif %}
+      {% if post.bibtex %}<a href="{{ post.bibtex }}" class="pub-link" target="_blank">BibTeX</a>{% endif %}
+    </div>
   </div>
 </div>
 

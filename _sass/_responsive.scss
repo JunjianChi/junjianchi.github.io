@@ -61,7 +61,18 @@
   .blog-grid { grid-template-columns: 1fr; }
   .photo-grid { columns: 2 180px; }
 
-  .edu-item,
+  .pub-card {
+    flex-direction: column;
+  }
+
+  .pub-thumb {
+    width: 100%;
+  }
+
+  .edu-item {
+    gap: 12px;
+  }
+
   .highlight-list li {
     flex-direction: column;
     gap: 4px;

@@ -13,6 +13,12 @@
   <h3 class="author-name">{{ site.author.name }}</h3>
   <p class="author-name-zh lang-zh">{{ site.author.name_zh }}</p>
 
+  <!-- CV -->
+  <a href="{{ '/files/CV_Chi.pdf' | relative_url }}" class="author-cv-btn" target="_blank" rel="noopener">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+    <span>Curriculum Vitae</span>
+  </a>
+
   <!-- Bio / Title -->
   <p class="author-bio">
     <span class="lang-en">{{ site.author.bio }}</span>
@@ -73,14 +79,6 @@
     </li>
     {% endif %}
 
-    {% if site.author.orcid and site.author.orcid != "" %}
-    <li>
-      <a href="https://orcid.org/{{ site.author.orcid }}" target="_blank" rel="noopener">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zM7.369 4.378a.87.87 0 110 1.742.87.87 0 010-1.742zm-.78 3.576h1.559v11.13H6.589V7.954zm3.845 0h4.21c4.443 0 5.596 3.282 5.596 5.574 0 3.575-2.464 5.556-5.596 5.556h-4.21V7.954zm1.559 1.385v8.36h2.548c2.464 0 4.134-1.611 4.134-4.184 0-2.472-1.484-4.176-4.134-4.176h-2.548z"/></svg>
-        <span>ORCID</span>
-      </a>
-    </li>
-    {% endif %}
   </ul>
 
 </div>

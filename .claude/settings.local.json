@@ -9,7 +9,12 @@
       "WebFetch(domain:raw.githubusercontent.com)",
       "WebFetch(domain:www.ucl.ac.uk)",
       "WebFetch(domain:cdt.sensors.cam.ac.uk)",
-      "mcp__ide__getDiagnostics"
+      "mcp__ide__getDiagnostics",
+      "WebFetch(domain:chen-geng.com)",
+      "Bash(curl:*)",
+      "WebFetch(domain:www.linkedin.com)",
+      "WebSearch",
+      "WebFetch(domain:upload.wikimedia.org)"
     ]
   }
 }

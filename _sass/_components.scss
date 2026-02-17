@@ -166,6 +166,22 @@
   margin-bottom: 12px;
 }
 
+.author-cv-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  padding: 4px 12px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  transition: all var(--transition);
+  margin-bottom: 12px;
+  svg { opacity: 0.5; flex-shrink: 0; }
+  &:hover { color: var(--accent); border-color: var(--accent); background: var(--accent-light); }
+}
+
 .author-bio {
   font-size: 0.85rem;
   color: var(--text-secondary);
@@ -215,18 +231,45 @@
 }
 
 // ============================================
-// PUBLICATION CARDS
+// PUBLICATION CARDS (image-left / info-right)
 // ============================================
 .pub-list {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 24px;
 }
 
 .pub-card {
+  display: flex;
+  gap: 20px;
   padding: 20px 0;
   border-bottom: 1px solid var(--border-subtle);
   &:last-child { border-bottom: none; }
+}
+
+.pub-thumb {
+  flex-shrink: 0;
+  width: 200px;
+
+  img {
+    width: 100%;
+    border-radius: var(--radius-sm);
+    display: block;
+    border: 1px solid var(--border-subtle);
+  }
+}
+
+.pub-thumb-placeholder {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  background: linear-gradient(135deg, var(--accent-light) 0%, var(--bg-secondary) 100%);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-subtle);
+}
+
+.pub-info {
+  flex: 1;
+  min-width: 0;
 }
 
 .pub-title {
@@ -249,7 +292,22 @@
   font-size: 0.82rem;
   color: var(--accent);
   font-style: italic;
+  margin-bottom: 4px;
+}
+
+.pub-award {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 4px;
+}
+
+.pub-tldr {
+  font-size: 0.84rem;
+  color: var(--text-muted);
+  line-height: 1.6;
   margin-bottom: 10px;
+  strong { color: var(--text-secondary); }
 }
 
 .pub-excerpt {
