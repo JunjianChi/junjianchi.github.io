@@ -42,7 +42,7 @@ show_title: false
   </h2>
   <ul class="highlight-list">
     {% assign sorted_news = site.news | sort: "date" | reverse %}
-    {% for item in sorted_news limit:5 %}
+    {% for item in sorted_news limit:6 %}
     <li>
       <span class="hl-date">{{ item.date | date: "%Y.%m" }}</span>
       <span class="hl-text">
@@ -110,8 +110,8 @@ show_title: false
         <p class="edu-school">University of Cambridge</p>
         <p class="edu-meta">2025 &mdash; 2026 &middot; Cambridge, UK</p>
         <p class="edu-degree">
-          <span class="lang-en">MRes in Sensor Technologies (EPSRC CDT)</span>
-          <span class="lang-zh">传感器技术 硕士 (EPSRC 博士培训中心)</span>
+          <span class="lang-en">MRes in Sensor Technologies</span>
+          <span class="lang-zh">传感器技术 硕士</span>
         </p>
       </div>
     </div>
