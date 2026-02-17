@@ -14,7 +14,9 @@
       "Bash(curl:*)",
       "WebFetch(domain:www.linkedin.com)",
       "WebSearch",
-      "WebFetch(domain:upload.wikimedia.org)"
+      "WebFetch(domain:upload.wikimedia.org)",
+      "Bash(wc:*)",
+      "Bash(python3:*)"
     ]
   }
 }
