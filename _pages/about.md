@@ -10,31 +10,27 @@ show_title: false
 <!-- BIO -->
 <div class="about-bio">
   <p class="lang-en">
-    I am a MRes student at the
-    <a href="https://cdt.sensors.cam.ac.uk/" target="_blank" rel="noopener">EPSRC CDT in Sensor Technologies</a>
-    at the University of Cambridge, supervised by
-    <a href="https://profiles.ucl.ac.uk/45781" target="_blank" rel="noopener">Dr. Yu Wu</a>.
+    I am a MRes student at the EPSRC CDT in Sensor Technologies
+    at the University of Cambridge.
     My current research focuses on <strong>robotics perception and planning</strong>, exploring how
     sensor technologies and embodied learning can enable robots to better perceive and interact
     with the physical world.
   </p>
   <p class="lang-zh">
-    我目前就读于剑桥大学
-    <a href="https://cdt.sensors.cam.ac.uk/" target="_blank" rel="noopener">EPSRC 传感器技术博士培训中心</a>，
-    导师是
-    <a href="https://profiles.ucl.ac.uk/45781" target="_blank" rel="noopener">吴宇博士</a>。
+    我目前就读于剑桥大学 EPSRC 传感器技术博士培训中心。
     我目前的研究方向是<strong>机器人感知与规划</strong>，探索传感器技术和具身学习如何使机器人更好地感知和交互物理世界。
   </p>
 
   <p class="lang-en">
     Previously, I received my BEng in Electrical &amp; Electronic Engineering from
-    <a href="https://www.ucl.ac.uk/electronic-electrical-engineering/" target="_blank" rel="noopener">University College London (UCL)</a>,
+    University College London (UCL), supervised by
+    <a href="https://profiles.ucl.ac.uk/45781" target="_blank" rel="noopener">Dr. Yu Wu</a>,
     where my work spanned wearable sensing, human pose estimation, and biomedical circuit design.
   </p>
   <p class="lang-zh">
-    此前，我在
-    <a href="https://www.ucl.ac.uk/electronic-electrical-engineering/" target="_blank" rel="noopener">伦敦大学学院 (UCL)</a>
-    获得了电气与电子工程学士学位，本科期间的研究涉及可穿戴传感、人体姿态估计和生物医学电路设计。
+    此前，我在伦敦大学学院 (UCL) 获得了电气与电子工程学士学位，导师是
+    <a href="https://profiles.ucl.ac.uk/45781" target="_blank" rel="noopener">吴宇博士</a>，
+    本科期间的研究涉及可穿戴传感、人体姿态估计和生物医学电路设计。
   </p>
 </div>
 
@@ -58,33 +54,45 @@ show_title: false
   </ul>
 </section>
 
-<!-- RESEARCH -->
+<!-- PUBLICATIONS -->
 <section class="home-section">
   <h2 class="home-section-title">
-    <span class="lang-en">Research</span>
-    <span class="lang-zh">研究</span>
+    <span class="lang-en">Publications</span>
+    <span class="lang-zh">发表论文</span>
   </h2>
-  <p class="home-section-text">
-    <span class="lang-en">
-      I am broadly interested in how robots can perceive, understand, and act in the physical world.
-      My work combines sensor technologies, embedded systems, and machine learning to build
-      intelligent perception systems for robotic applications.
-    </span>
-    <span class="lang-zh">
-      我对机器人如何感知、理解并作用于物理世界有广泛兴趣。
-      我的工作结合传感器技术、嵌入式系统和机器学习，为机器人应用构建智能感知系统。
-    </span>
-  </p>
-  <div class="research-interests">
-    <span class="ri-tag">Robotics Perception</span>
-    <span class="ri-tag">Embodied Learning</span>
-    <span class="ri-tag">Wearable Sensing</span>
-    <span class="ri-tag">Embedded Systems</span>
+  <div class="pub-list">
+
+    <!-- ISCAS 2026 -->
+    <div class="pub-card">
+      <div class="pub-thumb">
+        <img src="{{ '/images/pub-iscas2026.png' | relative_url }}" alt="Multimodal Smart Insole" />
+      </div>
+      <div class="pub-info">
+        <h3 class="pub-title">Multimodal Smart Insole with Crossbar Crosstalk Compensation for Fall-Risk Prediction</h3>
+        <p class="pub-authors"><strong>J. Chi</strong>, Z. Zhang, Q. Zhang, A. Demosthenous, and Y. Wu</p>
+        <p class="pub-venue">IEEE International Symposium on Circuits and Systems (ISCAS), 2026</p>
+        <p class="pub-award">Poster</p>
+      </div>
+    </div>
+
+    <!-- ISCAS 2025 -->
+    <div class="pub-card">
+      <div class="pub-thumb">
+        <img src="{{ '/images/pub-iscas2025.png' | relative_url }}" alt="High-Resolution Plantar Pressure Insole" />
+      </div>
+      <div class="pub-info">
+        <h3 class="pub-title">High-Resolution Plantar Pressure Insole System for Enhanced Lower Body Biomechanical Analysis</h3>
+        <p class="pub-authors"><strong>J. Chi</strong>, Q. Zhang, Z. Zhang, A. Demosthenous, and Y. Wu</p>
+        <p class="pub-venue">IEEE International Symposium on Circuits and Systems (ISCAS), 2025</p>
+        <p class="pub-award">Oral Presentation (Lecture)</p>
+        <div class="pub-links">
+          <a href="https://ieeexplore.ieee.org/abstract/document/11044303/" class="pub-link" target="_blank">Paper</a>
+          <a href="https://github.com/JunjianChi/Pressure2Pose" class="pub-link" target="_blank">Code</a>
+        </div>
+      </div>
+    </div>
+
   </div>
-  <a href="{{ '/research/' | relative_url }}" class="section-link">
-    <span class="lang-en">See all research &rarr;</span>
-    <span class="lang-zh">查看全部研究 &rarr;</span>
-  </a>
 </section>
 
 <!-- EDUCATION -->
@@ -99,15 +107,11 @@ show_title: false
         <img src="{{ '/images/cambridge-logo.png' | relative_url }}" alt="University of Cambridge" />
       </div>
       <div class="edu-detail">
-        <p class="edu-degree">
-          <span class="lang-en">MRes in Sensor Technologies</span>
-          <span class="lang-zh">传感器技术 硕士</span>
-        </p>
         <p class="edu-school">University of Cambridge</p>
-        <p class="edu-year-inline">2025 &mdash; 2026</p>
-        <p class="edu-note">
-          <span class="lang-en">EPSRC Centre for Doctoral Training</span>
-          <span class="lang-zh">EPSRC 博士培训中心</span>
+        <p class="edu-meta">2025 &mdash; 2026 &middot; Cambridge, UK</p>
+        <p class="edu-degree">
+          <span class="lang-en">MRes in Sensor Technologies (EPSRC CDT)</span>
+          <span class="lang-zh">传感器技术 硕士 (EPSRC 博士培训中心)</span>
         </p>
       </div>
     </div>
@@ -116,12 +120,12 @@ show_title: false
         <img src="{{ '/images/ucl-logo.png' | relative_url }}" alt="UCL" />
       </div>
       <div class="edu-detail">
+        <p class="edu-school">University College London (UCL)</p>
+        <p class="edu-meta">2022 &mdash; 2025 &middot; London, UK</p>
         <p class="edu-degree">
           <span class="lang-en">BEng Electrical &amp; Electronic Engineering</span>
           <span class="lang-zh">电气与电子工程 工学学士</span>
         </p>
-        <p class="edu-school">University College London (UCL)</p>
-        <p class="edu-year-inline">2022 &mdash; 2025</p>
       </div>
     </div>
   </div>

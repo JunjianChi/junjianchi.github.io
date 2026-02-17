@@ -13,44 +13,32 @@
   <h3 class="author-name">{{ site.author.name }}</h3>
   <p class="author-name-zh lang-zh">{{ site.author.name_zh }}</p>
 
-  <!-- CV -->
-  <a href="{{ '/files/CV_Chi.pdf' | relative_url }}" class="author-cv-btn" target="_blank" rel="noopener">
-    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
-    <span>Curriculum Vitae</span>
-  </a>
-
   <!-- Bio / Title -->
   <p class="author-bio">
     <span class="lang-en">{{ site.author.bio }}</span>
     <span class="lang-zh">{{ site.author.bio_zh }}</span>
   </p>
 
-  <!-- Affiliation -->
+  <!-- Affiliation (plain text, no link) -->
   <p class="author-affiliation">
-    <a href="{{ site.author.affiliation_url }}" target="_blank" rel="noopener">
-      <span class="lang-en">{{ site.author.affiliation }}</span>
-      <span class="lang-zh">{{ site.author.affiliation_zh }}</span>
-    </a>
+    <span class="lang-en">{{ site.author.affiliation }}</span>
+    <span class="lang-zh">{{ site.author.affiliation_zh }}</span>
   </p>
 
-  <!-- Location -->
-  {% if site.author.location %}
-  <p class="author-location">
-    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-    {{ site.author.location }}
+  <!-- Email -->
+  <p class="author-email">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,12 2,6"></polyline></svg>
+    <span>jc2592 AT cam.ac.uk</span>
   </p>
-  {% endif %}
 
   <!-- Links -->
   <ul class="author-links">
-    {% if site.author.email %}
     <li>
-      <a href="mailto:{{ site.author.email }}">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,12 2,6"></polyline></svg>
-        <span>Email</span>
+      <a href="{{ '/files/Junjian_Chi_CV.pdf' | relative_url }}" target="_blank" rel="noopener">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+        <span>CV</span>
       </a>
     </li>
-    {% endif %}
 
     {% if site.author.github %}
     <li>

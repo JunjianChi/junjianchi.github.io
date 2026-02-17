@@ -28,18 +28,12 @@ author:
   avatar: "/images/profile.png"
   bio: "MRes Student"
   bio_zh: "硕士研究生"
-  location: "Cambridge, UK"
-  affiliation: "Sensor CDT, University of Cambridge"
-  affiliation_zh: "剑桥大学 传感器技术博士培训中心"
-  affiliation_url: "https://cdt.sensors.cam.ac.uk/"
-  supervisor: "Dr. Yu Wu"
-  supervisor_url: "https://profiles.ucl.ac.uk/45781"
-  group: "Sensors, Systems and Circuits"
-  group_url: "https://www.ucl.ac.uk/engineering/electronic-electrical-engineering/research/sensors-systems-and-circuits"
-  email: "chijunjian@gmail.com"
+  affiliation: "University of Cambridge"
+  affiliation_zh: "剑桥大学"
+  email: "jc2592@cam.ac.uk"
   github: "junjianchi"
   linkedin: "junjianchi"
-  googlescholar: ""
+  googlescholar: "XA9pIckAAAAJ"
 
 # ============================================================
 # Collections
