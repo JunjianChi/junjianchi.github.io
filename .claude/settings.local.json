@@ -16,7 +16,9 @@
       "WebSearch",
       "WebFetch(domain:upload.wikimedia.org)",
       "Bash(wc:*)",
-      "Bash(python3:*)"
+      "Bash(python3:*)",
+      "WebFetch(domain:medium.com)",
+      "WebFetch(domain:docs.github.com)"
     ]
   }
 }

@@ -22,10 +22,8 @@
 <!-- Theme + Language: apply before paint -->
 <script>
   (function() {
-    var theme = localStorage.getItem('jc-theme') ||
-      (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-    var lang = localStorage.getItem('jc-lang') ||
-      (navigator.language.startsWith('zh') ? 'zh' : 'en');
+    var theme = localStorage.getItem('jc-theme') || 'light';
+    var lang = localStorage.getItem('jc-lang') || 'en';
     document.documentElement.setAttribute('data-theme', theme);
     document.documentElement.setAttribute('data-lang', lang);
   })();

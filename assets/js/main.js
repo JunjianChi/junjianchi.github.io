@@ -13,9 +13,7 @@
      Theme (Dark / Light)
   ------------------------------------------ */
   function getPreferredTheme() {
-    var saved = localStorage.getItem(THEME_KEY);
-    if (saved) return saved;
-    return 'light';
+    return localStorage.getItem(THEME_KEY) || 'light';
   }
 
   function setTheme(theme) {
@@ -35,9 +33,7 @@
      Language (EN / ZH)
   ------------------------------------------ */
   function getPreferredLang() {
-    var saved = localStorage.getItem(LANG_KEY);
-    if (saved) return saved;
-    return navigator.language.startsWith('zh') ? 'zh' : 'en';
+    return localStorage.getItem(LANG_KEY) || 'en';
   }
 
   function setLang(lang) {
