@@ -109,14 +109,14 @@
     width: 100%;
     height: 100%;
     object-fit: contain;
-    display: block;
   }
 
-  .logo-dark { display: none; }
+  img.logo-dark { display: none; }
+  img.logo-light { display: block; }
 
   [data-theme="dark"] & {
-    .logo-light { display: none; }
-    .logo-dark { display: block; }
+    img.logo-light { display: none; }
+    img.logo-dark { display: block; }
   }
 }
 
