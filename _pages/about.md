@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "About"
+title: "About Me"
 title_zh: "关于"
 permalink: /
 author_profile: true
