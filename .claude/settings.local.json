@@ -18,7 +18,10 @@
       "Bash(wc:*)",
       "Bash(python3:*)",
       "WebFetch(domain:medium.com)",
-      "WebFetch(domain:docs.github.com)"
+      "WebFetch(domain:docs.github.com)",
+      "WebFetch(domain:www.stickpng.com)",
+      "Bash(head:*)",
+      "Bash(xxd:*)"
     ]
   }
 }

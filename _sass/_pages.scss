@@ -111,6 +111,13 @@
     object-fit: contain;
     display: block;
   }
+
+  .logo-dark { display: none; }
+
+  [data-theme="dark"] & {
+    .logo-light { display: none; }
+    .logo-dark { display: block; }
+  }
 }
 
 .edu-detail { flex: 1; }

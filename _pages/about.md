@@ -117,7 +117,8 @@ show_title: false
     </div>
     <div class="edu-item">
       <div class="edu-logo">
-        <img src="{{ '/images/ucl-logo.png' | relative_url }}" alt="UCL" />
+        <img class="logo-light" src="{{ '/images/ucl-logo.png' | relative_url }}" alt="UCL" />
+        <img class="logo-dark" src="{{ '/images/ucl-logo-light.png' | relative_url }}" alt="UCL" />
       </div>
       <div class="edu-detail">
         <p class="edu-school">University College London</p>
