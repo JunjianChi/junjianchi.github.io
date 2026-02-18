@@ -24,46 +24,59 @@ show_title: false
   <button class="filter-btn" data-filter="architecture">Architecture</button>
   <button class="filter-btn" data-filter="street">Street</button>
   <button class="filter-btn" data-filter="landscape">Landscape</button>
-  <button class="filter-btn" data-filter="travel">Travel</button>
+  <button class="filter-btn" data-filter="sea">Sea</button>
 </div>
 
 <!-- Photo Grid -->
 <div class="photo-grid">
-  <!-- Replace placeholders with real photos:
-       <div class="photo-item" data-category="architecture">
-         <img src="/images/photos/photo1.jpg" alt="Description" />
-         <div class="photo-overlay"><span class="photo-caption">Caption</span></div>
-       </div>
-  -->
-
   <div class="photo-item" data-category="architecture">
-    <div class="photo-item-placeholder" style="height:260px;"></div>
-    <div class="photo-overlay"><span class="photo-caption">Architecture #1</span></div>
-  </div>
-
-  <div class="photo-item" data-category="street">
-    <div class="photo-item-placeholder" style="height:320px;"></div>
-    <div class="photo-overlay"><span class="photo-caption">Street #1</span></div>
+    <img src="/images/photography/sanfrancisco.jpeg" alt="Golden Gate Bridge in Fog, San Francisco" />
+    <div class="photo-overlay"><span class="photo-caption">Golden Gate Bridge in Fog, San Francisco</span></div>
   </div>
 
   <div class="photo-item" data-category="landscape">
-    <div class="photo-item-placeholder" style="height:200px;"></div>
-    <div class="photo-overlay"><span class="photo-caption">Landscape #1</span></div>
+    <img src="/images/photography/brighton2.jpeg" alt="Milky Way & Meteor, Brighton" />
+    <div class="photo-overlay"><span class="photo-caption">Milky Way & Meteor, Brighton</span></div>
   </div>
 
-  <div class="photo-item" data-category="travel">
-    <div class="photo-item-placeholder" style="height:280px;"></div>
-    <div class="photo-overlay"><span class="photo-caption">Travel #1</span></div>
+  <div class="photo-item" data-category="landscape">
+    <img src="/images/photography/brighton.jpeg" alt="Perseid Meteor Shower, Brighton" />
+    <div class="photo-overlay"><span class="photo-caption">Perseid Meteor Shower, Brighton</span></div>
   </div>
 
-  <div class="photo-item" data-category="architecture">
-    <div class="photo-item-placeholder" style="height:300px;"></div>
-    <div class="photo-overlay"><span class="photo-caption">Architecture #2</span></div>
+  <div class="photo-item" data-category="sea">
+    <img src="/images/photography/brightonmorning.jpeg" alt="Beachy Head Lighthouse, Dawn" />
+    <div class="photo-overlay"><span class="photo-caption">Beachy Head Lighthouse, Dawn</span></div>
+  </div>
+
+  <div class="photo-item" data-category="landscape">
+    <img src="/images/photography/norway.jpeg" alt="Snow Mountain Lodge, Norway" />
+    <div class="photo-overlay"><span class="photo-caption">Snow Mountain Lodge, Norway</span></div>
+  </div>
+
+  <div class="photo-item" data-category="sea">
+    <img src="/images/photography/santamonica3.jpeg" alt="Crescent Moon, Santa Monica" />
+    <div class="photo-overlay"><span class="photo-caption">Crescent Moon, Santa Monica</span></div>
   </div>
 
   <div class="photo-item" data-category="street">
-    <div class="photo-item-placeholder" style="height:240px;"></div>
-    <div class="photo-overlay"><span class="photo-caption">Street #2</span></div>
+    <img src="/images/photography/philadelphia.jpeg" alt="Golden Hour, Philadelphia" />
+    <div class="photo-overlay"><span class="photo-caption">Golden Hour, Philadelphia</span></div>
+  </div>
+
+  <div class="photo-item" data-category="sea">
+    <img src="/images/photography/santamonica.jpeg" alt="Sunset Beach, Santa Monica" />
+    <div class="photo-overlay"><span class="photo-caption">Sunset Beach, Santa Monica</span></div>
+  </div>
+
+  <div class="photo-item" data-category="sea">
+    <img src="/images/photography/santatmonica2.jpeg" alt="Dusk Swimmers, Santa Monica" />
+    <div class="photo-overlay"><span class="photo-caption">Dusk Swimmers, Santa Monica</span></div>
+  </div>
+
+  <div class="photo-item" data-category="landscape">
+    <img src="/images/photography/stabbs.jpeg" alt="Razorbill on the Cliffs, St Abb's Head" />
+    <div class="photo-overlay"><span class="photo-caption">Razorbill on the Cliffs, St Abb's Head</span></div>
   </div>
 </div>
 
