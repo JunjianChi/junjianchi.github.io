@@ -111,12 +111,8 @@
     object-fit: contain;
   }
 
-  img.logo-dark { display: none; }
-  img.logo-light { display: block; }
-
-  [data-theme="dark"] & {
-    img.logo-light { display: none; }
-    img.logo-dark { display: block; }
+  [data-theme="dark"] & .ucl-logo {
+    filter: invert(1);
   }
 }
 
