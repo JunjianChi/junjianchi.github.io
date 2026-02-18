@@ -111,9 +111,10 @@
     object-fit: contain;
   }
 
-  [data-theme="dark"] & .ucl-logo {
-    filter: invert(1);
-  }
+}
+
+[data-theme="dark"] .edu-logo .ucl-logo {
+  filter: invert(1);
 }
 
 .edu-detail { flex: 1; }
