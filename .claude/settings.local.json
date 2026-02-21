@@ -21,7 +21,9 @@
       "WebFetch(domain:docs.github.com)",
       "WebFetch(domain:www.stickpng.com)",
       "Bash(head:*)",
-      "Bash(xxd:*)"
+      "Bash(xxd:*)",
+      "Bash(sips:*)",
+      "Bash(ls:*)"
     ]
   }
 }
