@@ -71,7 +71,7 @@ show_title: false
         <h3 class="pub-title">Multimodal Smart Insole with Crossbar Crosstalk Compensation for Fall-Risk Prediction</h3>
         <p class="pub-authors"><strong>J. Chi</strong>, Z. Zhang, Q. Zhang, A. Demosthenous, and Y. Wu</p>
         <p class="pub-venue">IEEE International Symposium on Circuits and Systems (ISCAS), 2026</p>
-        <p class="pub-award">Poster</p>
+        <p class="pub-award"><span class="lang-en">Poster</span><span class="lang-zh">海报展示</span></p>
       </div>
     </div>
 
@@ -84,10 +84,10 @@ show_title: false
         <h3 class="pub-title">High-Resolution Plantar Pressure Insole System for Enhanced Lower Body Biomechanical Analysis</h3>
         <p class="pub-authors"><strong>J. Chi</strong>, Q. Zhang, Z. Zhang, A. Demosthenous, and Y. Wu</p>
         <p class="pub-venue">IEEE International Symposium on Circuits and Systems (ISCAS), 2025</p>
-        <p class="pub-award">Oral Presentation (Lecture)</p>
+        <p class="pub-award"><span class="lang-en">Oral Presentation (Lecture)</span><span class="lang-zh">口头报告</span></p>
         <div class="pub-links">
-          <a href="https://ieeexplore.ieee.org/abstract/document/11044303/" class="pub-link" target="_blank">Paper</a>
-          <a href="https://github.com/JunjianChi/Pressure2Pose" class="pub-link" target="_blank">Code</a>
+          <a href="https://ieeexplore.ieee.org/abstract/document/11044303/" class="pub-link" target="_blank"><span class="lang-en">Paper</span><span class="lang-zh">论文</span></a>
+          <a href="https://github.com/JunjianChi/Pressure2Pose" class="pub-link" target="_blank"><span class="lang-en">Code</span><span class="lang-zh">代码</span></a>
         </div>
       </div>
     </div>
@@ -107,8 +107,8 @@ show_title: false
         <img src="{{ '/images/cambridge-logo.png' | relative_url }}" alt="University of Cambridge" />
       </div>
       <div class="edu-detail">
-        <p class="edu-school">University of Cambridge</p>
-        <p class="edu-meta">2025 &mdash; 2026 &middot; Cambridge, UK</p>
+        <p class="edu-school"><span class="lang-en">University of Cambridge</span><span class="lang-zh">剑桥大学</span></p>
+        <p class="edu-meta"><span class="lang-en">2025 &mdash; 2026 &middot; Cambridge, UK</span><span class="lang-zh">2025 &mdash; 2026 &middot; 英国剑桥</span></p>
         <p class="edu-degree">
           <span class="lang-en">MRes in Sensor Technologies</span>
           <span class="lang-zh">传感器技术 硕士</span>
@@ -120,8 +120,8 @@ show_title: false
         <img src="{{ '/images/ucl-logo.png' | relative_url }}" alt="UCL" />
       </div>
       <div class="edu-detail">
-        <p class="edu-school">University College London</p>
-        <p class="edu-meta">2022 &mdash; 2025 &middot; London, UK</p>
+        <p class="edu-school"><span class="lang-en">University College London</span><span class="lang-zh">伦敦大学学院</span></p>
+        <p class="edu-meta"><span class="lang-en">2022 &mdash; 2025 &middot; London, UK</span><span class="lang-zh">2022 &mdash; 2025 &middot; 英国伦敦</span></p>
         <p class="edu-degree">
           <span class="lang-en">BEng Electrical &amp; Electronic Engineering</span>
           <span class="lang-zh">电气与电子工程 工学学士</span>
