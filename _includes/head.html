@@ -13,6 +13,13 @@
 <meta property="og:description" content="{% if page.description %}{{ page.description }}{% elsif page.url == '/' %}Junjian Chi - MRes student at EPSRC CDT in Sensor Technologies, University of Cambridge.{% else %}{{ site.description }}{% endif %}" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="{{ page.url | absolute_url }}" />
+<meta property="og:image" content="{{ site.url }}/images/profile.png" />
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="{% if page.url == '/' %}{{ site.title }}{% else %}{{ page.title | default: site.title }}{% endif %}" />
+<meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% elsif page.url == '/' %}Junjian Chi - MRes student at EPSRC CDT in Sensor Technologies, University of Cambridge.{% else %}{{ site.description }}{% endif %}" />
+<meta name="twitter:image" content="{{ site.url }}/images/profile.png" />
 
 <!-- Structured Data: site name for Google Search -->
 <script type="application/ld+json">
