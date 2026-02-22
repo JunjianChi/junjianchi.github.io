@@ -23,7 +23,12 @@
       "Bash(head:*)",
       "Bash(xxd:*)",
       "Bash(sips:*)",
-      "Bash(ls:*)"
+      "Bash(ls:*)",
+      "Bash(gh run:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(pip3 install:*)"
     ]
   }
 }

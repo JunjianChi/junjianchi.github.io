@@ -1,32 +1,10 @@
 ---
 layout: archive
-title: "Research"
-title_zh: "研究"
+title: "Experience"
+title_zh: "项目经历"
 permalink: /research/
 author_profile: true
 ---
-
-<!-- PUBLICATIONS -->
-<section class="home-section">
-  <h2 class="home-section-title">
-    <span class="lang-en">Publications</span>
-    <span class="lang-zh">发表论文</span>
-  </h2>
-
-  {% assign sorted_pubs = site.publications | sort: "date" | reverse %}
-  {% if sorted_pubs.size > 0 %}
-  <div class="pub-list">
-    {% for post in sorted_pubs %}
-      {% include archive-single.html type="publication" %}
-    {% endfor %}
-  </div>
-  {% else %}
-  <p class="home-section-text" style="font-style: italic;">
-    <span class="lang-en">Publications coming soon.</span>
-    <span class="lang-zh">论文即将发布。</span>
-  </p>
-  {% endif %}
-</section>
 
 <!-- PROJECTS -->
 <section class="home-section">
