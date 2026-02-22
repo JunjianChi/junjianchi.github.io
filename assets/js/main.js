@@ -33,8 +33,10 @@
      Music Toggle
   ------------------------------------------ */
   var MUSIC_KEY = 'jc-music';
+  var MUSIC_POS_KEY = 'jc-music-pos';
   var bgMusic = null;
   var musicPlaying = false;
+  var posInterval = null;
 
   function getMusicAudio() {
     if (!bgMusic) {
@@ -45,6 +47,21 @@
     return bgMusic;
   }
 
+  function savePosition() {
+    if (bgMusic) {
+      localStorage.setItem(MUSIC_POS_KEY, bgMusic.currentTime);
+    }
+  }
+
+  function startSavingPosition() {
+    if (posInterval) clearInterval(posInterval);
+    posInterval = setInterval(savePosition, 1000);
+  }
+
+  function stopSavingPosition() {
+    if (posInterval) { clearInterval(posInterval); posInterval = null; }
+  }
+
   function updateMusicButtons() {
     document.querySelectorAll('.music-toggle').forEach(function(btn) {
       btn.textContent = musicPlaying ? '♫' : '♪';
@@ -52,18 +69,27 @@
     });
   }
 
+  function playAudioFromSaved(audio) {
+    var saved = parseFloat(localStorage.getItem(MUSIC_POS_KEY));
+    if (saved && !isNaN(saved)) audio.currentTime = saved;
+    return audio.play();
+  }
+
   function toggleMusic() {
     var audio = getMusicAudio();
     if (musicPlaying) {
       audio.pause();
+      savePosition();
+      stopSavingPosition();
       musicPlaying = false;
     } else {
-      audio.play().catch(function() {
+      playAudioFromSaved(audio).catch(function() {
         musicPlaying = false;
         localStorage.setItem(MUSIC_KEY, 'off');
         updateMusicButtons();
       });
       musicPlaying = true;
+      startSavingPosition();
     }
     localStorage.setItem(MUSIC_KEY, musicPlaying ? 'on' : 'off');
     updateMusicButtons();
@@ -72,16 +98,19 @@
   function resumeMusic() {
     if (localStorage.getItem(MUSIC_KEY) === 'on') {
       var audio = getMusicAudio();
-      audio.play().then(function() {
-        musicPlaying = true;
-        updateMusicButtons();
+      // Show playing state immediately
+      musicPlaying = true;
+      updateMusicButtons();
+      playAudioFromSaved(audio).then(function() {
+        startSavingPosition();
       }).catch(function() {
-        // Browser blocked autoplay, wait for user interaction
+        // Browser blocked autoplay, resume on first user click
         var resume = function() {
           if (localStorage.getItem(MUSIC_KEY) === 'on') {
-            audio.play().then(function() {
+            playAudioFromSaved(audio).then(function() {
               musicPlaying = true;
               updateMusicButtons();
+              startSavingPosition();
             });
           }
           document.removeEventListener('click', resume);
@@ -90,6 +119,11 @@
       });
     }
   }
+
+  // Save position right before page unloads
+  window.addEventListener('beforeunload', function() {
+    if (musicPlaying) savePosition();
+  });
 
   /* ------------------------------------------
      Language (EN / ZH)
