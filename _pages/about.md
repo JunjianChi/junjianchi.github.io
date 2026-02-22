@@ -68,9 +68,9 @@ show_title: false
         <img src="{{ '/images/pub-iscas2026.png' | relative_url }}" alt="Multimodal Smart Insole" />
       </div>
       <div class="pub-info">
-        <h3 class="pub-title">Multimodal Smart Insole with Crossbar Crosstalk Compensation for Fall-Risk Prediction</h3>
+        <h3 class="pub-title"><span class="lang-en">Multimodal Smart Insole with Crossbar Crosstalk Compensation for Fall-Risk Prediction</span><span class="lang-zh">基于串扰补偿的多模态智能鞋垫跌倒风险预测</span></h3>
         <p class="pub-authors"><strong>J. Chi</strong>, Z. Zhang, Q. Zhang, A. Demosthenous, and Y. Wu</p>
-        <p class="pub-venue">IEEE International Symposium on Circuits and Systems (ISCAS), 2026</p>
+        <p class="pub-venue"><span class="lang-en">IEEE International Symposium on Circuits and Systems (ISCAS), 2026</span><span class="lang-zh">IEEE 国际电路与系统研讨会 (ISCAS), 2026</span></p>
         <p class="pub-award"><span class="lang-en">Poster</span><span class="lang-zh">海报展示</span></p>
       </div>
     </div>
@@ -81,9 +81,9 @@ show_title: false
         <img src="{{ '/images/pub-iscas2025.png' | relative_url }}" alt="High-Resolution Plantar Pressure Insole" />
       </div>
       <div class="pub-info">
-        <h3 class="pub-title">High-Resolution Plantar Pressure Insole System for Enhanced Lower Body Biomechanical Analysis</h3>
+        <h3 class="pub-title"><span class="lang-en">High-Resolution Plantar Pressure Insole System for Enhanced Lower Body Biomechanical Analysis</span><span class="lang-zh">用于增强下肢生物力学分析的高分辨率足底压力鞋垫系统</span></h3>
         <p class="pub-authors"><strong>J. Chi</strong>, Q. Zhang, Z. Zhang, A. Demosthenous, and Y. Wu</p>
-        <p class="pub-venue">IEEE International Symposium on Circuits and Systems (ISCAS), 2025</p>
+        <p class="pub-venue"><span class="lang-en">IEEE International Symposium on Circuits and Systems (ISCAS), 2025</span><span class="lang-zh">IEEE 国际电路与系统研讨会 (ISCAS), 2025</span></p>
         <p class="pub-award"><span class="lang-en">Oral Presentation (Lecture)</span><span class="lang-zh">口头报告</span></p>
         <div class="pub-links">
           <a href="https://ieeexplore.ieee.org/abstract/document/11044303/" class="pub-link" target="_blank"><span class="lang-en">Paper</span><span class="lang-zh">论文</span></a>

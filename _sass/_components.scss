@@ -70,6 +70,17 @@
   &:hover { color: var(--text-primary); border-color: var(--text-muted); }
 }
 
+.music-toggle.playing {
+  color: var(--accent);
+  border-color: var(--accent);
+  animation: music-pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes music-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+
 .lang-btn {
   width: auto;
   padding: 0 10px;

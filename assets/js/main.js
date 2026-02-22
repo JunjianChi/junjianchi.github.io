@@ -30,6 +30,46 @@
   }
 
   /* ------------------------------------------
+     Music Toggle
+  ------------------------------------------ */
+  var bgMusic = null;
+  var musicPlaying = false;
+
+  function getMusicAudio() {
+    if (!bgMusic) {
+      bgMusic = new Audio('/assets/audio/like-a-star.mp3');
+      bgMusic.loop = true;
+      bgMusic.volume = 0.5;
+      bgMusic.addEventListener('ended', function() {
+        musicPlaying = false;
+        updateMusicButtons();
+      });
+    }
+    return bgMusic;
+  }
+
+  function updateMusicButtons() {
+    document.querySelectorAll('.music-toggle').forEach(function(btn) {
+      btn.textContent = musicPlaying ? '♫' : '♪';
+      btn.classList.toggle('playing', musicPlaying);
+    });
+  }
+
+  function toggleMusic() {
+    var audio = getMusicAudio();
+    if (musicPlaying) {
+      audio.pause();
+      musicPlaying = false;
+    } else {
+      audio.play().catch(function() {
+        // Browser may block autoplay; user interaction required
+      });
+      musicPlaying = true;
+    }
+    updateMusicButtons();
+  }
+
+  /* ------------------------------------------
      Language (EN / ZH)
   ------------------------------------------ */
   function getPreferredLang() {
@@ -165,6 +205,9 @@
       });
       document.querySelectorAll('.lang-toggle').forEach(function(btn) {
         btn.addEventListener('click', toggleLang);
+      });
+      document.querySelectorAll('.music-toggle').forEach(function(btn) {
+        btn.addEventListener('click', toggleMusic);
       });
 
       initNav();
