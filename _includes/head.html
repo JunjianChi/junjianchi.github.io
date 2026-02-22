@@ -5,12 +5,12 @@
 <title>{% if page.url == '/' %}{{ site.title }}{% elsif page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
 
 <!-- Meta Description -->
-<meta name="description" content="{% if page.description %}{{ page.description }}{% elsif page.url == '/' %}Junjian Chi - MRes student at EPSRC CDT in Sensor Technologies, University of Cambridge.{% else %}{{ site.description }}{% endif %}" />
+<meta name="description" content="{% if page.description %}{{ page.description }}{% elsif page.url == '/' %}Junjian Chi (池俊谏) - MRes student at EPSRC CDT in Sensor Technologies, University of Cambridge.{% else %}{{ site.description }}{% endif %}" />
 
 <!-- Open Graph -->
 <meta property="og:title" content="{% if page.url == '/' %}{{ site.title }}{% else %}{{ page.title | default: site.title }}{% endif %}" />
 <meta property="og:site_name" content="Junjian Chi" />
-<meta property="og:description" content="{% if page.description %}{{ page.description }}{% elsif page.url == '/' %}Junjian Chi - MRes student at EPSRC CDT in Sensor Technologies, University of Cambridge.{% else %}{{ site.description }}{% endif %}" />
+<meta property="og:description" content="{% if page.description %}{{ page.description }}{% elsif page.url == '/' %}Junjian Chi (池俊谏) - MRes student at EPSRC CDT in Sensor Technologies, University of Cambridge.{% else %}{{ site.description }}{% endif %}" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="{{ page.url | absolute_url }}" />
 <meta property="og:image" content="{{ site.url }}/images/profile.png" />
@@ -18,7 +18,7 @@
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="{% if page.url == '/' %}{{ site.title }}{% else %}{{ page.title | default: site.title }}{% endif %}" />
-<meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% elsif page.url == '/' %}Junjian Chi - MRes student at EPSRC CDT in Sensor Technologies, University of Cambridge.{% else %}{{ site.description }}{% endif %}" />
+<meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% elsif page.url == '/' %}Junjian Chi (池俊谏) - MRes student at EPSRC CDT in Sensor Technologies, University of Cambridge.{% else %}{{ site.description }}{% endif %}" />
 <meta name="twitter:image" content="{{ site.url }}/images/profile.png" />
 
 <!-- Structured Data: site name for Google Search -->

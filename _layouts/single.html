@@ -32,7 +32,7 @@
             <p class="project-period">
               {{ page.start | date: "%b %Y" }}
               &mdash;
-              {% if page.end == "now" %}Present{% else %}{{ page.end | date: "%b %Y" }}{% endif %}
+              {% if page.end == "now" %}<span class="lang-en">Present</span><span class="lang-zh">至今</span>{% else %}{{ page.end | date: "%b %Y" }}{% endif %}
             </p>
             {% endif %}
             {% if page.tags.size > 0 %}
@@ -54,9 +54,9 @@
 
         {% if page.collection == "publications" %}
         <div class="single-links">
-          {% if page.paperurl %}<a href="{{ page.paperurl }}" class="pub-link" target="_blank">Paper</a>{% endif %}
-          {% if page.slidesurl %}<a href="{{ page.slidesurl }}" class="pub-link" target="_blank">Slides</a>{% endif %}
-          {% if page.codeurl %}<a href="{{ page.codeurl }}" class="pub-link" target="_blank">Code</a>{% endif %}
+          {% if page.paperurl %}<a href="{{ page.paperurl }}" class="pub-link" target="_blank"><span class="lang-en">Paper</span><span class="lang-zh">论文</span></a>{% endif %}
+          {% if page.slidesurl %}<a href="{{ page.slidesurl }}" class="pub-link" target="_blank"><span class="lang-en">Slides</span><span class="lang-zh">幻灯片</span></a>{% endif %}
+          {% if page.codeurl %}<a href="{{ page.codeurl }}" class="pub-link" target="_blank"><span class="lang-en">Code</span><span class="lang-zh">代码</span></a>{% endif %}
           {% if page.bibtex %}<a href="{{ page.bibtex }}" class="pub-link" target="_blank">BibTeX</a>{% endif %}
         </div>
         {% endif %}
@@ -64,8 +64,8 @@
         {% if page.collection == "projects" %}
         <div class="single-links">
           {% if page.github %}<a href="{{ page.github }}" class="pub-link" target="_blank">GitHub</a>{% endif %}
-          {% if page.demo %}<a href="{{ page.demo }}" class="pub-link" target="_blank">Demo</a>{% endif %}
-          {% if page.paperurl %}<a href="{{ page.paperurl }}" class="pub-link" target="_blank">Paper</a>{% endif %}
+          {% if page.demo %}<a href="{{ page.demo }}" class="pub-link" target="_blank"><span class="lang-en">Demo</span><span class="lang-zh">演示</span></a>{% endif %}
+          {% if page.paperurl %}<a href="{{ page.paperurl }}" class="pub-link" target="_blank"><span class="lang-en">Paper</span><span class="lang-zh">论文</span></a>{% endif %}
         </div>
         {% endif %}
 

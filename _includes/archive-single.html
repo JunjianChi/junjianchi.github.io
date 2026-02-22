@@ -26,11 +26,11 @@
     {% if post.award %}<p class="pub-award">{{ post.award }}</p>{% endif %}
     {% if post.tldr %}<p class="pub-tldr"><strong>tl;dr:</strong> {{ post.tldr }}</p>{% endif %}
     <div class="pub-links">
-      {% if post.paperurl %}<a href="{{ post.paperurl }}" class="pub-link" target="_blank">Paper</a>{% endif %}
+      {% if post.paperurl %}<a href="{{ post.paperurl }}" class="pub-link" target="_blank"><span class="lang-en">Paper</span><span class="lang-zh">论文</span></a>{% endif %}
       {% if post.arxiv %}<a href="{{ post.arxiv }}" class="pub-link" target="_blank">arXiv</a>{% endif %}
-      {% if post.projectpage %}<a href="{{ post.projectpage }}" class="pub-link" target="_blank">Project</a>{% endif %}
-      {% if post.codeurl %}<a href="{{ post.codeurl }}" class="pub-link" target="_blank">Code</a>{% endif %}
-      {% if post.slidesurl %}<a href="{{ post.slidesurl }}" class="pub-link" target="_blank">Slides</a>{% endif %}
+      {% if post.projectpage %}<a href="{{ post.projectpage }}" class="pub-link" target="_blank"><span class="lang-en">Project</span><span class="lang-zh">项目</span></a>{% endif %}
+      {% if post.codeurl %}<a href="{{ post.codeurl }}" class="pub-link" target="_blank"><span class="lang-en">Code</span><span class="lang-zh">代码</span></a>{% endif %}
+      {% if post.slidesurl %}<a href="{{ post.slidesurl }}" class="pub-link" target="_blank"><span class="lang-en">Slides</span><span class="lang-zh">幻灯片</span></a>{% endif %}
       {% if post.bibtex %}<a href="{{ post.bibtex }}" class="pub-link" target="_blank">BibTeX</a>{% endif %}
     </div>
   </div>
@@ -54,8 +54,8 @@
     {% if post.summary %}<p class="project-desc">{{ post.summary }}</p>{% endif %}
     <div class="project-links">
       {% if post.github %}<a href="{{ post.github }}" class="pub-link" target="_blank">GitHub</a>{% endif %}
-      {% if post.paperurl %}<a href="{{ post.paperurl }}" class="pub-link" target="_blank">Paper</a>{% endif %}
-      {% if post.demo %}<a href="{{ post.demo }}" class="pub-link" target="_blank">Demo</a>{% endif %}
+      {% if post.paperurl %}<a href="{{ post.paperurl }}" class="pub-link" target="_blank"><span class="lang-en">Paper</span><span class="lang-zh">论文</span></a>{% endif %}
+      {% if post.demo %}<a href="{{ post.demo }}" class="pub-link" target="_blank"><span class="lang-en">Demo</span><span class="lang-zh">演示</span></a>{% endif %}
     </div>
   </div>
 </div>
