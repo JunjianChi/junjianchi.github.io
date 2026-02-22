@@ -8,11 +8,6 @@ author_profile: true
 
 <!-- PROJECTS -->
 <section class="home-section">
-  <h2 class="home-section-title">
-    <span class="lang-en">Projects</span>
-    <span class="lang-zh">项目</span>
-  </h2>
-
   {% assign sorted_projects = site.projects | sort: "order" %}
   {% if sorted_projects.size > 0 %}
   <div class="projects-grid">
