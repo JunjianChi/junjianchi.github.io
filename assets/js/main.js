@@ -32,6 +32,7 @@
   /* ------------------------------------------
      Music Toggle
   ------------------------------------------ */
+  var MUSIC_KEY = 'jc-music';
   var bgMusic = null;
   var musicPlaying = false;
 
@@ -40,10 +41,6 @@
       bgMusic = new Audio('/assets/audio/1.mp3');
       bgMusic.loop = true;
       bgMusic.volume = 0.5;
-      bgMusic.addEventListener('ended', function() {
-        musicPlaying = false;
-        updateMusicButtons();
-      });
     }
     return bgMusic;
   }
@@ -62,11 +59,36 @@
       musicPlaying = false;
     } else {
       audio.play().catch(function() {
-        // Browser may block autoplay; user interaction required
+        musicPlaying = false;
+        localStorage.setItem(MUSIC_KEY, 'off');
+        updateMusicButtons();
       });
       musicPlaying = true;
     }
+    localStorage.setItem(MUSIC_KEY, musicPlaying ? 'on' : 'off');
     updateMusicButtons();
+  }
+
+  function resumeMusic() {
+    if (localStorage.getItem(MUSIC_KEY) === 'on') {
+      var audio = getMusicAudio();
+      audio.play().then(function() {
+        musicPlaying = true;
+        updateMusicButtons();
+      }).catch(function() {
+        // Browser blocked autoplay, wait for user interaction
+        var resume = function() {
+          if (localStorage.getItem(MUSIC_KEY) === 'on') {
+            audio.play().then(function() {
+              musicPlaying = true;
+              updateMusicButtons();
+            });
+          }
+          document.removeEventListener('click', resume);
+        };
+        document.addEventListener('click', resume);
+      });
+    }
   }
 
   /* ------------------------------------------
@@ -209,6 +231,7 @@
       document.querySelectorAll('.music-toggle').forEach(function(btn) {
         btn.addEventListener('click', toggleMusic);
       });
+      resumeMusic();
 
       initNav();
       initLightbox();
