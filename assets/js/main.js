@@ -40,7 +40,7 @@
 
   function getMusicAudio() {
     if (!bgMusic) {
-      bgMusic = new Audio('/assets/audio/1.mp3');
+      bgMusic = new Audio('/assets/audio/MountainofMiracle.mp3');
       bgMusic.loop = true;
       bgMusic.volume = 0.5;
     }

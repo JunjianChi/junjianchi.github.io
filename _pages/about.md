@@ -32,6 +32,14 @@ show_title: false
     <a href="https://profiles.ucl.ac.uk/45781" target="_blank" rel="noopener">吴宇博士</a>，
     本科期间的研究涉及可穿戴传感、人体姿态估计和生物医学电路设计。
   </p>
+
+  <p class="lang-en">
+    Apart from research, I enjoy playing guitar (fingerstyle) — you can hear one of my recordings
+    by clicking the ♪ button in the top right corner. Building guitars by hand could be another career path if things don't work out.
+  </p>
+  <p class="lang-zh">
+    学术之外，我喜欢弹吉他 (指弹) ——点击右上角的 ♪ 按钮可以听我弹的一首曲子。未来有机会的话，也想尝试手工制作吉他。
+  </p>
 </div>
 
 <!-- HIGHLIGHTS -->
