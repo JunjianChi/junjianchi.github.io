@@ -35,10 +35,10 @@ show_title: false
 
   <p class="lang-en">
     Apart from research, I enjoy playing guitar (fingerstyle) — you can hear one of my recordings
-    by clicking the ♪ button in the top right corner. Building guitars by hand could be another career path if things don't work out.
+    by clicking the ♪ button in the top right corner. Career Plan B is probably to make guitars by hand.
   </p>
   <p class="lang-zh">
-    学术之外，我喜欢弹吉他 (指弹) ——点击右上角的 ♪ 按钮可以听我弹的一首曲子。未来有机会的话，也想尝试手工制作吉他。
+    学术之外，我喜欢弹指弹吉他——点击右上角的 ♪ 按钮可以听我弹的一首曲子。Plan B 是去做一名制琴师，毕竟总得有人来造吉他吧？
   </p>
 </div>
 
