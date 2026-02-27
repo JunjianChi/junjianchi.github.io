@@ -259,6 +259,13 @@
 // ============================================
 // BLOG ARCHIVE PAGE
 // ============================================
+.blog-filters {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
 .blog-notice {
   background: var(--accent-light);
   border: 1px solid var(--border);

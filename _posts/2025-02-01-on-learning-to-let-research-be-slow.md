@@ -1,7 +1,7 @@
 ---
 title: ""
 date: 2025-02-22
-category: reflection
+category: academic
 excerpt: "Some thoughts on patience in research and why rushing rarely helps."
 ---
 

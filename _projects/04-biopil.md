@@ -16,11 +16,16 @@ cover: /images/projects/bio-sensor-pill/IMG_2931.PNG
 # demo:
 ---
 
-This was my Year 2 undergraduate project at UCL, developed for the [IEEE CASS Student Design Competition](https://www.youtube.com/watch?v=-s3cfciB_M4).
+This was my [IEEE CASS Student Design Competition](https://www.youtube.com/watch?v=-s3cfciB_M4) participated in Year 2.
 
-A low-cost ingestible biosensor pill for colon-targeted drug delivery, equipped with IR and IMU sensors for real-time tracking of the capsule through the digestive tract. A Unity 3D digestive system model was built to verify pill localisation.
+## Motivaion
+
+Ulcerative colitis has an incidence of 9 to 20 cases per 100,000 persons per year. In 2024, the prevalence of ulcerative colitis was estimated to be 5 million cases around the world, and the incidence is increasing worldwide. To enhance traditional systematic delivery methods, colon-targeted delivery becomes imperative. Accordingly, the biosensor pill has been specifically designed to show the potential of microelectronic pill for this crucial requirement.
+
 
 ## Design
+
+A low-cost ingestible biosensor pill for colon-targeted drug delivery, equipped with IR and IMU sensors for real-time tracking of the capsule through the digestive tract. A Unity 3D digestive system model was built to verify pill localisation.
 
 The capsule measures 25 mm in length and 16 mm in diameter. A three-layer flex-rigid PCB integrates IR and IMU sensors under an ESP32 microcontroller, powered by two 3V coin-cell batteries. Wireless data transmission uses the ESPNOW protocol.
 

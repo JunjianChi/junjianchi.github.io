@@ -22,11 +22,36 @@ author_profile: true
 
 {% assign sorted_posts = site.posts | sort: "date" | reverse %}
 {% if sorted_posts.size > 0 %}
+
+<div class="blog-filters">
+  <button class="filter-btn active" data-filter="all">
+    <span class="lang-en">All</span><span class="lang-zh">全部</span>
+  </button>
+  <button class="filter-btn" data-filter="life">Life</button>
+  <button class="filter-btn" data-filter="academic">Academic</button>
+</div>
+
 <div class="blog-grid">
   {% for post in sorted_posts %}
-    {% include archive-single.html type="post" %}
+  <div class="blog-card" data-category="{{ post.category | slugify }}">
+    <div class="blog-card-body">
+      <div class="blog-meta">
+        <span class="blog-date">{{ post.date | date: "%Y.%m.%d" }}</span>
+        {% if post.category %}<span class="blog-category">{{ post.category }}</span>{% endif %}
+      </div>
+      <h3 class="blog-title">
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      </h3>
+      {% if post.excerpt %}<p class="blog-excerpt">{{ post.excerpt | strip_html | truncate: 160 }}</p>{% endif %}
+      <a href="{{ post.url | relative_url }}" class="blog-read-more">
+        <span class="lang-en">Read more &rarr;</span>
+        <span class="lang-zh">阅读更多 &rarr;</span>
+      </a>
+    </div>
+  </div>
   {% endfor %}
 </div>
+
 {% else %}
 <p class="home-section-text" style="font-style: italic;">
   <span class="lang-en">Blog posts coming soon.</span>
