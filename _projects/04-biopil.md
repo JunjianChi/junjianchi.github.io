@@ -32,3 +32,9 @@ The capsule measures 25 mm in length and 16 mm in diameter. A three-layer flex-r
     <figcaption>Three-section flex-rigid PCB: antenna, MCU, and sensor/power modules</figcaption>
   </figure>
 </div>
+
+## Demo
+
+<video width="100%" controls muted playsinline style="border-radius: 6px; border: 1px solid var(--border-subtle);">
+  <source src="/images/projects/bio-sensor-pill/1.mp4" type="video/mp4">
+</video>
