@@ -7,7 +7,7 @@ order: 2
 start: 2023-09-01
 end: 2024-06-01
 labels: [Biomedical Circuit]
-tags: [Biomedical, Embedded System, Sensor]
+tags: [Biomedical, Embedded System]
 summary: "Low-cost ingestible capsule with IR and IMU sensors for real-time colon-targeted drug delivery tracking."
 summary_zh: "搭载红外与 IMU 传感器的低成本可吞咽胶囊，用于结肠靶向给药的实时追踪。"
 cover: /images/projects/bio-sensor-pill/IMG_2931.PNG
@@ -16,7 +16,7 @@ cover: /images/projects/bio-sensor-pill/IMG_2931.PNG
 # demo:
 ---
 
-<p class="lang-en">This was my <a href="https://www.youtube.com/watch?v=-s3cfciB_M4">IEEE CASS Student Design Competition</a> participated in Year 2.</p>
+<p class="lang-en">This was my <a href="https://www.youtube.com/watch?v=-s3cfciB_M4">2023 IEEE CASS Student Design Competition</a> participated in Year 2.</p>
 <p class="lang-zh">这是我在大二参加的 <a href="https://www.youtube.com/watch?v=-s3cfciB_M4">IEEE CASS 学生设计竞赛</a>项目。</p>
 
 ## <span class="lang-en">Motivation</span><span class="lang-zh">研究动机</span>
@@ -39,7 +39,7 @@ cover: /images/projects/bio-sensor-pill/IMG_2931.PNG
   </figure>
   <figure>
     <img src="/images/projects/bio-sensor-pill/d05024f2cff9b5b18d6cd435f9ba8f97.PNG" alt="Flex-rigid PCB layout" />
-    <figcaption><span class="lang-en">Three-section flex-rigid PCB: antenna, MCU, and sensor/power modules</span><span class="lang-zh">三段式软硬结合 PCB：天线、MCU 及传感器/电源模块</span></figcaption>
+    <figcaption><span class="lang-en">Three-section flex-rigid PCB: antenna, MCU, and sensor</span><span class="lang-zh">三段式软硬结合 PCB：天线、MCU 及传感器</span></figcaption>
   </figure>
 </div>
 

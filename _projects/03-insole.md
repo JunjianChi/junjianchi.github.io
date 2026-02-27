@@ -32,11 +32,11 @@ cover: /images/projects/smart-insole/insole_pcb1-5.png
 <div class="project-gallery">
   <figure>
     <img src="/images/projects/smart-insole/IMG_5342.PNG" alt="Smart Insole Ver1 — 3D exploded view" />
-    <figcaption><span class="lang-en">Ver1 (Sep 2023) — PCB with multiplexers stacked with ESP32 development board</span><span class="lang-zh">第一版（2023 年 9 月）— 多路复用器 PCB 与 ESP32 开发板堆叠</span></figcaption>
+    <figcaption><span class="lang-en">Ver1 (June 2024) — PCB with multiplexers stacked with ESP32 development board</span><span class="lang-zh">第一版（2024 年 6 月）— 多路复用器 PCB 与 ESP32 开发板堆叠</span></figcaption>
   </figure>
   <figure>
     <img src="/images/projects/smart-insole/insole_pcb1-5.png" alt="Smart Insole Ver2 — compact PCB with integrated ESP32" />
-    <figcaption><span class="lang-en">Ver2 (Jun 2024) — Integrated ESP32 chip on a compact single-board design with IMU</span><span class="lang-zh">第二版（2024 年 6 月）— 集成 ESP32 芯片的紧凑单板设计，含 IMU</span></figcaption>
+    <figcaption><span class="lang-en">Ver2 (Apr 2025) — Integrated ESP32 chip on a compact single-board design with IMU</span><span class="lang-zh">第二版（2025 年 4 月）— 集成 ESP32 芯片的紧凑单板设计，含 IMU</span></figcaption>
   </figure>
 </div>
 
