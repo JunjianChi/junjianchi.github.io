@@ -320,8 +320,84 @@
 }
 
 // ============================================
+// TALKS / EXPERIENCE
+// ============================================
+.talks-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.talk-item {
+  display: flex;
+  gap: 16px;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--border-subtle);
+  &:last-child { border-bottom: none; }
+}
+
+.talk-thumb {
+  flex-shrink: 0;
+  width: 180px;
+  img {
+    width: 100%;
+    border-radius: var(--radius-sm);
+    display: block;
+    border: 1px solid var(--border-subtle);
+  }
+}
+
+.talk-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.talk-type {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--accent);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.talk-title {
+  font-family: var(--font-serif);
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 4px;
+}
+
+.talk-venue {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  margin-bottom: 4px;
+}
+
+.talk-desc {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  font-style: italic;
+  margin-bottom: 8px;
+}
+
+// ============================================
 // PROJECT CARDS
 // ============================================
+.project-category-title {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin-top: 28px;
+  margin-bottom: 14px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border-subtle);
+  &:first-of-type { margin-top: 0; }
+}
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -347,6 +423,31 @@
 }
 
 .project-body { padding: 16px; }
+
+.project-filters {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.project-labels {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-bottom: 6px;
+}
+
+.project-label {
+  font-size: 0.68rem;
+  font-weight: 600;
+  color: var(--accent);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  background: var(--accent-light);
+  padding: 2px 8px;
+  border-radius: var(--radius-full);
+}
 
 .project-tag {
   font-size: 0.7rem;
@@ -502,6 +603,32 @@
   font-size: 0.85rem;
   color: var(--text-link);
   font-weight: 500;
+}
+
+// ============================================
+// PROJECT GALLERY (image grid in single project page)
+// ============================================
+.project-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+  margin: 20px 0 28px;
+
+  figure {
+    margin: 0;
+    img {
+      width: 100%;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border-subtle);
+      display: block;
+    }
+    figcaption {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      margin-top: 6px;
+      text-align: center;
+    }
+  }
 }
 
 // ============================================

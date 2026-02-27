@@ -246,6 +246,33 @@
   }
 
   /* ------------------------------------------
+     Projects: Label Filter
+  ------------------------------------------ */
+  function initProjectFilter() {
+    var btns = document.querySelectorAll('.project-filters .filter-btn');
+    var cards = document.querySelectorAll('.projects-grid .project-card');
+    if (!btns.length) return;
+
+    btns.forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        btns.forEach(function(b) { b.classList.remove('active'); });
+        btn.classList.add('active');
+        var filter = btn.getAttribute('data-filter');
+        cards.forEach(function(card) {
+          var labels = card.getAttribute('data-labels') || '';
+          if (filter === 'all' || labels.split(' ').indexOf(filter) !== -1) {
+            card.style.display = '';
+            setTimeout(function() { card.style.opacity = '1'; }, 10);
+          } else {
+            card.style.opacity = '0';
+            setTimeout(function() { card.style.display = 'none'; }, 200);
+          }
+        });
+      });
+    });
+  }
+
+  /* ------------------------------------------
      Init
   ------------------------------------------ */
   function init() {
@@ -270,6 +297,7 @@
       initNav();
       initLightbox();
       initPhotoFilter();
+      initProjectFilter();
     });
   }
 

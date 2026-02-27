@@ -1,24 +1,126 @@
 ---
 layout: archive
-title: "Project"
-title_zh: "项目"
+title: "Research"
+title_zh: "研究"
 permalink: /research/
 author_profile: true
 ---
 
-<!-- PROJECTS -->
+<!-- TALKS -->
 <section class="home-section">
-  {% assign sorted_projects = site.projects | sort: "order" %}
-  {% if sorted_projects.size > 0 %}
-  <div class="projects-grid">
-    {% for post in sorted_projects %}
-      {% include archive-single.html type="project" %}
+  <h2 class="home-section-title">
+    <span class="lang-en">Talks</span>
+    <span class="lang-zh">学术报告</span>
+  </h2>
+  <div class="talks-list">
+    {% assign sorted_talks = site.data.talks | sort: "date" | reverse %}
+    {% for talk in sorted_talks %}
+    <div class="talk-item">
+      {% if talk.cover %}
+      <div class="talk-thumb">
+        <img src="{{ talk.cover | relative_url }}" alt="{{ talk.title }}" />
+      </div>
+      {% endif %}
+      <div class="talk-info">
+        <span class="talk-type">
+          <span class="lang-en">{{ talk.type }}</span>
+          <span class="lang-zh">{{ talk.type_zh }}</span>
+        </span>
+        <h3 class="talk-title">
+          <span class="lang-en">{{ talk.title }}</span>
+          <span class="lang-zh">{{ talk.title_zh }}</span>
+        </h3>
+        <p class="talk-venue">
+          <span class="lang-en">{{ talk.venue }}</span>
+          <span class="lang-zh">{{ talk.venue_zh }}</span>
+          &middot; {{ talk.date | date: "%b %Y" }}
+        </p>
+        {% if talk.description != "" %}
+        <p class="talk-desc">
+          <span class="lang-en">{{ talk.description }}</span>
+          {% if talk.description_zh %}<span class="lang-zh">{{ talk.description_zh }}</span>{% endif %}
+        </p>
+        {% endif %}
+        <div class="pub-links">
+          {% if talk.slidesurl %}
+          <a href="{{ talk.slidesurl | relative_url }}" class="pub-link" target="_blank">
+            <span class="lang-en">Slides</span><span class="lang-zh">幻灯片</span>
+          </a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
     {% endfor %}
   </div>
-  {% else %}
-  <p class="home-section-text" style="font-style: italic;">
-    <span class="lang-en">Projects coming soon.</span>
-    <span class="lang-zh">项目即将发布。</span>
-  </p>
-  {% endif %}
+</section>
+
+<!-- PROJECTS -->
+<section class="home-section">
+  <h2 class="home-section-title">
+    <span class="lang-en">Projects</span>
+    <span class="lang-zh">项目</span>
+  </h2>
+
+  <!-- Label filter buttons (generated from project labels) -->
+  {% assign sorted_projects = site.projects | sort: "order" %}
+  {% assign all_labels = "" %}
+  {% for proj in sorted_projects %}
+    {% for label in proj.labels %}
+      {% unless all_labels contains label %}
+        {% if all_labels == "" %}
+          {% assign all_labels = label %}
+        {% else %}
+          {% assign all_labels = all_labels | append: "||" | append: label %}
+        {% endif %}
+      {% endunless %}
+    {% endfor %}
+  {% endfor %}
+  {% assign label_array = all_labels | split: "||" %}
+
+  <div class="project-filters">
+    <button class="filter-btn active" data-filter="all">
+      <span class="lang-en">All</span><span class="lang-zh">全部</span>
+    </button>
+    {% for label in label_array %}
+    <button class="filter-btn" data-filter="{{ label | slugify }}">{{ label }}</button>
+    {% endfor %}
+  </div>
+
+  <div class="projects-grid">
+    {% for post in sorted_projects %}
+    <div class="project-card" data-labels="{% for label in post.labels %}{{ label | slugify }}{% unless forloop.last %} {% endunless %}{% endfor %}">
+      {% if post.cover %}
+      <img src="{{ post.cover | relative_url }}" alt="{{ post.title }}" class="project-img" />
+      {% else %}
+      <div class="project-img-placeholder"></div>
+      {% endif %}
+      <div class="project-body">
+        {% if post.labels.size > 0 %}
+        <div class="project-labels">
+          {% for label in post.labels %}
+          <span class="project-label">{{ label }}</span>
+          {% endfor %}
+        </div>
+        {% endif %}
+        <h3 class="project-title">
+          <a href="{{ post.url | relative_url }}">
+            <span class="lang-en">{{ post.title }}</span>
+            {% if post.title_zh %}<span class="lang-zh">{{ post.title_zh }}</span>{% endif %}
+          </a>
+        </h3>
+        {% if post.summary %}
+        <p class="project-desc">
+          <span class="lang-en">{{ post.summary }}</span>
+          {% if post.summary_zh %}<span class="lang-zh">{{ post.summary_zh }}</span>{% endif %}
+        </p>
+        {% endif %}
+        <div class="project-links">
+          {% if post.github %}<a href="{{ post.github }}" class="pub-link" target="_blank">GitHub</a>{% endif %}
+          {% if post.paperurl %}<a href="{{ post.paperurl }}" class="pub-link" target="_blank"><span class="lang-en">Paper</span><span class="lang-zh">论文</span></a>{% endif %}
+          {% if post.demo %}<a href="{{ post.demo }}" class="pub-link" target="_blank"><span class="lang-en">Demo</span><span class="lang-zh">演示</span></a>{% endif %}
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
 </section>
