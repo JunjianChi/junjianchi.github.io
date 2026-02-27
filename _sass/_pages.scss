@@ -158,13 +158,13 @@
   border-radius: var(--radius-full);
   font-size: 0.82rem;
   font-weight: 500;
-  border: 1px solid var(--border);
-  background: var(--bg-card);
+  border: none;
+  background: var(--bg-secondary);
   color: var(--text-muted);
   cursor: pointer;
   font-family: var(--font-sans);
   transition: all var(--transition);
-  &:hover, &.active { border-color: var(--accent); color: var(--accent); background: var(--accent-light); }
+  &:hover, &.active { color: var(--accent); background: var(--accent-light); }
 }
 
 .photo-grid {

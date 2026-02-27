@@ -250,7 +250,7 @@
   ------------------------------------------ */
   function initProjectFilter() {
     var btns = document.querySelectorAll('.project-filters .filter-btn');
-    var cards = document.querySelectorAll('.projects-grid .project-card');
+    var cards = document.querySelectorAll('#projects-filterable .project-card');
     if (!btns.length) return;
 
     btns.forEach(function(btn) {

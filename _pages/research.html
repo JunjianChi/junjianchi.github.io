@@ -38,7 +38,7 @@ author_profile: true
     {% endfor %}
   </div>
 
-  <div class="projects-grid">
+  <div class="projects-grid" id="projects-filterable">
     {% for post in sorted_projects %}
     <div class="project-card" data-labels="{% for label in post.labels %}{{ label | slugify }}{% unless forloop.last %} {% endunless %}{% endfor %}">
       {% if post.cover %}
