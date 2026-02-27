@@ -30,7 +30,7 @@ Invited talk at the **April AI Hub Second Annual Summit** in London.
 
 <div class="project-gallery">
   <figure>
-    <img src="/images/talks/april-ai-hub/IMG_0559.png" alt="Research poster — Machine Learning for Skyrmion Dynamics" />
+    <img src="/images/talks/april-ai-hub/IMG_0559.PNG" alt="Research poster — Machine Learning for Skyrmion Dynamics" />
     <figcaption>Poster: Machine Learning for Skyrmion Dynamics — Automating Micromagnetic Simulations</figcaption>
   </figure>
 </div>
