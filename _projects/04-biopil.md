@@ -16,6 +16,8 @@ cover: /images/projects/bio-sensor-pill/IMG_2931.PNG
 # demo:
 ---
 
+This was my Year 2 undergraduate project at UCL, developed for the [IEEE CASS Student Design Competition](https://www.youtube.com/watch?v=-s3cfciB_M4).
+
 A low-cost ingestible biosensor pill for colon-targeted drug delivery, equipped with IR and IMU sensors for real-time tracking of the capsule through the digestive tract. A Unity 3D digestive system model was built to verify pill localisation.
 
 ## Design
