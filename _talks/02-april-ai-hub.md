@@ -3,7 +3,7 @@ title: "April AI Hub Annual Summit"
 title_zh: "April AI Hub 年度峰会"
 collection: talks
 order: 2
-date: 2025-04-01
+date: 2025-11-01
 venue: "One Bridge, London"
 venue_zh: "伦敦 One Bridge"
 type: "Invited Talk"

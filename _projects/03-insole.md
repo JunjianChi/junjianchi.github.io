@@ -11,10 +11,12 @@ tags: [Wearable, Biomedical, Sensor]
 summary: "High-resolution plantar pressure insole with 253 sensors per foot and AI-driven lower body joint prediction for rehabilitation and gait analysis."
 summary_zh: "每只脚搭载 253 个高密度传感器的足底压力鞋垫，结合 AI 驱动的下肢关节预测，用于康复与步态分析。"
 cover: /images/projects/smart-insole/insole_pcb1-5.png
-github: https://github.com/JunjianChi/Pressure2Pose
+# github: https://github.com/JunjianChi/Pressure2Pose
 # paperurl:
 # demo:
 ---
+
+This was my undergraduate research project (Year 2–3) at UCL, which resulted in two publications at IEEE ISCAS. For details, see [Publications](/#publications).
 
 ## Motivation
 
@@ -27,11 +29,11 @@ A real-time insole system featuring **253 high-density resistive pressure sensor
 <div class="project-gallery">
   <figure>
     <img src="/images/projects/smart-insole/IMG_5342.PNG" alt="Smart Insole Ver1 — 3D exploded view" />
-    <figcaption>Ver1 — Sensor board, MCU, ESP32 BLE module, and 3.7V 500mAh battery</figcaption>
+    <figcaption>Ver1 (Sep 2023) — PCB with multiplexers stacked with ESP32 development board</figcaption>
   </figure>
   <figure>
-    <img src="/images/projects/smart-insole/insole_pcb1-5.png" alt="Smart Insole Ver2 — PCB render with IMU" />
-    <figcaption>Ver2 — Final version with integrated IMU, USB-C charging</figcaption>
+    <img src="/images/projects/smart-insole/insole_pcb1-5.png" alt="Smart Insole Ver2 — compact PCB with integrated ESP32" />
+    <figcaption>Ver2 (Jun 2024) — Integrated ESP32 chip on a compact single-board design with IMU</figcaption>
   </figure>
 </div>
 

@@ -60,17 +60,6 @@ author_profile: true
             {% if post.title_zh %}<span class="lang-zh">{{ post.title_zh }}</span>{% endif %}
           </a>
         </h3>
-        {% if post.summary %}
-        <p class="project-desc">
-          <span class="lang-en">{{ post.summary }}</span>
-          {% if post.summary_zh %}<span class="lang-zh">{{ post.summary_zh }}</span>{% endif %}
-        </p>
-        {% endif %}
-        <div class="project-links">
-          {% if post.github %}<a href="{{ post.github }}" class="pub-link" target="_blank">GitHub</a>{% endif %}
-          {% if post.paperurl %}<a href="{{ post.paperurl }}" class="pub-link" target="_blank"><span class="lang-en">Paper</span><span class="lang-zh">论文</span></a>{% endif %}
-          {% if post.demo %}<a href="{{ post.demo }}" class="pub-link" target="_blank"><span class="lang-en">Demo</span><span class="lang-zh">演示</span></a>{% endif %}
-        </div>
       </div>
     </div>
     {% endfor %}
@@ -103,17 +92,6 @@ author_profile: true
             {% if post.title_zh %}<span class="lang-zh">{{ post.title_zh }}</span>{% endif %}
           </a>
         </h3>
-        <p class="project-desc">
-          <span class="lang-en">{{ post.venue }}</span>
-          <span class="lang-zh">{{ post.venue_zh }}</span>
-          &middot; {{ post.date | date: "%b %Y" }}
-        </p>
-        {% if post.summary %}
-        <p class="project-desc" style="font-style: italic;">
-          <span class="lang-en">{{ post.summary }}</span>
-          {% if post.summary_zh %}<span class="lang-zh">{{ post.summary_zh }}</span>{% endif %}
-        </p>
-        {% endif %}
       </div>
     </div>
     {% endfor %}
