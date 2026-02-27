@@ -45,6 +45,9 @@ collections:
   projects:
     output: true
     permalink: /project/:path
+  talks:
+    output: true
+    permalink: /talk/:path
   news:
     output: false
 
@@ -61,6 +64,12 @@ defaults:
   - scope:
       path: ""
       type: "projects"
+    values:
+      layout: "single"
+      author_profile: true
+  - scope:
+      path: ""
+      type: "talks"
     values:
       layout: "single"
       author_profile: true
