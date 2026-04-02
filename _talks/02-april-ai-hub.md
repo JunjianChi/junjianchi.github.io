@@ -13,24 +13,19 @@ summary: "Machine Learning for Skyrmion Dynamics: Automating Micromagnetic Simul
 summary_zh: "磁性斯格明子动力学的机器学习：自动化微磁模拟"
 ---
 
-Invited talk at the **April AI Hub Second Annual Summit** in London.
+<p class="lang-en"><strong>Topic:</strong> <em>Machine Learning for Skyrmion Dynamics: Automating Micromagnetic Simulations</em></p>
+<p class="lang-zh"><strong>题目：</strong><em>磁性斯格明子动力学的机器学习：自动化微磁模拟</em></p>
 
-**Topic:** *Machine Learning for Skyrmion Dynamics: Automating Micromagnetic Simulations*
+<p class="lang-en"><strong>Speaker:</strong> Junjian Chi</p>
+<p class="lang-zh"><strong>演讲者：</strong>池俊谏</p>
 
-<div class="project-gallery">
-  <figure>
-    <img src="/images/talks/april-ai-hub/IMG_3865.JPG" alt="Talk at April AI Hub Annual Summit — auditorium view" />
-    <figcaption>Presenting at the April AI Hub Annual Summit, One Bridge, London</figcaption>
-  </figure>
-  <figure>
-    <img src="/images/talks/april-ai-hub/IMG_3863.JPG" alt="Presenting at the podium" />
-    <figcaption>At the podium</figcaption>
-  </figure>
-</div>
+<p class="lang-en"><strong>Venue:</strong> April AI Hub Second Annual Summit, One Bridge, London</p>
+<p class="lang-zh"><strong>地点：</strong>April AI Hub 第二届年度峰会，伦敦 One Bridge</p>
 
 <div class="project-gallery">
   <figure>
-    <img src="/images/talks/april-ai-hub/IMG_0559.PNG" alt="Research poster — Machine Learning for Skyrmion Dynamics" />
-    <figcaption>Poster: Machine Learning for Skyrmion Dynamics — Automating Micromagnetic Simulations</figcaption>
+    <img src="{{ '/images/talks/april-ai-hub/IMG_3865.JPG' | relative_url }}" alt="Talk at April AI Hub Annual Summit" loading="lazy" />
+    <img src="{{ '/images/talks/april-ai-hub/IMG_3863.JPG' | relative_url }}" alt="Presenting at the podium" loading="lazy" />
+    <figcaption><span class="lang-en">Presenting at the April AI Hub Annual Summit, London</span><span class="lang-zh">在 April AI Hub 年度峰会进行报告，伦敦</span></figcaption>
   </figure>
 </div>

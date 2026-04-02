@@ -277,7 +277,7 @@
   ------------------------------------------ */
   function initBlogFilter() {
     var btns = document.querySelectorAll('.blog-filters .filter-btn');
-    var cards = document.querySelectorAll('.blog-grid .blog-card');
+    var cards = document.querySelectorAll('.blog-timeline .blog-timeline-item');
     if (!btns.length) return;
 
     btns.forEach(function(btn) {

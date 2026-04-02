@@ -2,14 +2,14 @@
 // ABOUT / HOME PAGE
 // ============================================
 .about-bio {
-  margin-bottom: 36px;
-  padding-bottom: 28px;
+  margin-bottom: 24px;
+  padding-bottom: 20px;
   border-bottom: 1px solid var(--border-subtle);
 
   p {
-    font-size: 0.95rem;
-    line-height: 1.85;
-    margin-bottom: 12px;
+    font-size: 0.92rem;
+    line-height: 1.65;
+    margin-bottom: 8px;
     &:last-child { margin-bottom: 0; }
   }
 
@@ -20,9 +20,9 @@
 
 // Home sections (Highlights, Research, Education)
 .home-section {
-  padding-bottom: 28px;
+  padding-bottom: 20px;
   border-bottom: 1px solid var(--border-subtle);
-  margin-bottom: 32px;
+  margin-bottom: 22px;
   &:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
 }
 
@@ -33,14 +33,14 @@
   color: var(--text-primary);
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
 }
 
 .home-section-text {
-  font-size: 0.92rem;
-  line-height: 1.8;
+  font-size: 0.9rem;
+  line-height: 1.6;
   color: var(--text-secondary);
-  margin-bottom: 14px;
+  margin-bottom: 10px;
 }
 
 // Highlights / News list
@@ -49,8 +49,8 @@
 
   li {
     display: flex;
-    gap: 20px;
-    padding: 10px 0;
+    gap: 16px;
+    padding: 7px 0;
     border-bottom: 1px solid var(--border-subtle);
     align-items: baseline;
     &:last-child { border-bottom: none; }
@@ -87,7 +87,7 @@
 .edu-timeline {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 16px;
 }
 
 .edu-item {
@@ -165,6 +165,7 @@
   font-family: var(--font-sans);
   transition: all var(--transition);
   &:hover, &.active { color: var(--accent); background: var(--accent-light); }
+  &:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 }
 
 .photo-grid {
@@ -247,6 +248,7 @@
   border: none;
   padding: 8px;
   &:hover { color: white; }
+  &:focus-visible { outline: 2px solid white; outline-offset: 2px; }
 }
 
 .lightbox-caption {
@@ -257,27 +259,87 @@
 }
 
 // ============================================
-// BLOG ARCHIVE PAGE
+// BLOG ARCHIVE PAGE — Timeline Style
 // ============================================
 .blog-filters {
   display: flex;
   gap: 8px;
   flex-wrap: wrap;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 
-.blog-notice {
-  background: var(--accent-light);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-md);
-  padding: 14px 18px;
-  margin-bottom: 32px;
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
+.blog-timeline {
+  position: relative;
+  padding-left: 100px;
 
-  p { font-size: 0.85rem; color: var(--text-secondary); line-height: 1.6; margin: 0; }
-  a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+  &::before {
+    content: '';
+    position: absolute;
+    left: 80px;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: var(--border);
+  }
+}
+
+.blog-timeline-item {
+  position: relative;
+  padding: 12px 0 24px 24px;
+  border-bottom: none;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: -4px;
+    top: 18px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--accent);
+    border: 2px solid var(--bg-primary);
+  }
+}
+
+.blog-timeline-date {
+  position: absolute;
+  left: -100px;
+  top: 12px;
+  width: 72px;
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.blog-timeline-category {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+  margin-bottom: 4px;
+}
+
+.blog-timeline-title {
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+  line-height: 1.4;
+  a { color: var(--text-primary); &:hover { color: var(--accent); } }
+}
+
+.blog-timeline-excerpt {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.blog-timeline-meta {
+  font-size: 0.75rem;
+  color: var(--text-muted);
 }
 
 // ============================================

@@ -12,7 +12,7 @@
 <div class="pub-card">
   <div class="pub-thumb">
     {% if post.cover %}
-    <img src="{{ post.cover | relative_url }}" alt="{{ post.title }}" />
+    <img src="{{ post.cover | relative_url }}" alt="{{ post.title }}" loading="lazy" />
     {% else %}
     <div class="pub-thumb-placeholder"></div>
     {% endif %}
@@ -40,7 +40,7 @@
 <!-- Project Card -->
 <div class="project-card">
   {% if post.cover %}
-  <img src="{{ post.cover | relative_url }}" alt="{{ post.title }}" class="project-img" />
+  <img src="{{ post.cover | relative_url }}" alt="{{ post.title }}" class="project-img" loading="lazy" />
   {% else %}
   <div class="project-img-placeholder"></div>
   {% endif %}

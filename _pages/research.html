@@ -42,7 +42,7 @@ author_profile: true
     {% for post in sorted_projects %}
     <div class="project-card" data-labels="{% for label in post.labels %}{{ label | slugify }}{% unless forloop.last %} {% endunless %}{% endfor %}">
       {% if post.cover %}
-      <img src="{{ post.cover | relative_url }}" alt="{{ post.title }}" class="project-img" />
+      <img src="{{ post.cover | relative_url }}" alt="{{ post.title }}" class="project-img" loading="lazy" />
       {% else %}
       <div class="project-img-placeholder"></div>
       {% endif %}
@@ -77,7 +77,7 @@ author_profile: true
     {% for post in sorted_talks %}
     <div class="project-card">
       {% if post.cover %}
-      <img src="{{ post.cover | relative_url }}" alt="{{ post.title }}" class="project-img" />
+      <img src="{{ post.cover | relative_url }}" alt="{{ post.title }}" class="project-img" loading="lazy" />
       {% else %}
       <div class="project-img-placeholder"></div>
       {% endif %}

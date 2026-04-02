@@ -21,6 +21,9 @@
 <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% elsif page.url == '/' %}Junjian Chi (池俊谏) - MRes student at EPSRC CDT in Sensor Technologies, University of Cambridge.{% else %}{{ site.description }}{% endif %}" />
 <meta name="twitter:image" content="{{ site.url }}/images/profile.png" />
 
+<!-- Canonical -->
+<link rel="canonical" href="{{ page.url | absolute_url }}" />
+
 <!-- Structured Data: site name for Google Search -->
 <script type="application/ld+json">
 {
@@ -29,6 +32,29 @@
   "name": "Junjian Chi",
   "alternateName": "池俊谏",
   "url": "{{ site.url }}/"
+}
+</script>
+
+<!-- Structured Data: Person -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Junjian Chi",
+  "alternateName": "池俊谏",
+  "url": "{{ site.url }}/",
+  "image": "{{ site.url }}/images/profile.png",
+  "email": "jc2592@cam.ac.uk",
+  "sameAs": [
+    "https://github.com/junjianchi",
+    "https://www.linkedin.com/in/junjian-chi-71106b264",
+    "https://scholar.google.com/citations?user=XA9pIckAAAAJ"
+  ],
+  "affiliation": {
+    "@type": "Organization",
+    "name": "University of Cambridge"
+  },
+  "jobTitle": "MRes Student"
 }
 </script>
 

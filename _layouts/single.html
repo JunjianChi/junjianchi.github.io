@@ -19,7 +19,10 @@
       <article class="page-content{% unless page.author_profile %} full-width{% endunless %}">
 
         <header class="single-header">
-          <h1 class="single-title">{{ page.title }}</h1>
+          <h1 class="single-title">
+          <span class="lang-en">{{ page.title }}</span>
+          {% if page.title_zh %}<span class="lang-zh">{{ page.title_zh }}</span>{% endif %}
+        </h1>
 
           {% if page.collection == "publications" %}
           <div class="single-meta">

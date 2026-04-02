@@ -4,7 +4,7 @@ title_zh: "用于下肢生物力学分析的智能鞋垫"
 collection: projects
 slug: "smart-insole"
 order: 1
-start: 2023-09-01
+start: 2024-06-01
 end: 2025-06-01
 labels: [Biomedical Circuit]
 tags: [Wearable, Biomedical, Sensor]
@@ -16,8 +16,8 @@ cover: /images/projects/smart-insole/insole_pcb1-5.png
 # demo:
 ---
 
-<p class="lang-en">This was my undergraduate research project (Year 2–3) at UCL, which resulted in two publications at IEEE ISCAS. For details, see <a href="/#publications">Publications</a>.</p>
-<p class="lang-zh">这是我在 UCL 大二至大三期间的本科研究项目，成果发表于两篇 IEEE ISCAS 论文。详见<a href="/#publications">发表论文</a>。</p>
+<p class="lang-en">This was my undergraduate research project (Year 2–3) at UCL, which resulted in two first-author publications at IEEE ISCAS. For details, see <a href="/#publications">Publications</a>.</p>
+<p class="lang-zh">这是我在 UCL 大二至大三期间的本科研究项目，成果发表于两篇一作 IEEE ISCAS 论文。详见<a href="/#publications">发表论文</a>。</p>
 
 ## <span class="lang-en">Motivation</span><span class="lang-zh">研究动机</span>
 
@@ -31,12 +31,21 @@ cover: /images/projects/smart-insole/insole_pcb1-5.png
 
 <div class="project-gallery">
   <figure>
-    <img src="/images/projects/smart-insole/IMG_5342.PNG" alt="Smart Insole Ver1 — 3D exploded view" />
-    <figcaption><span class="lang-en">Ver1 (June 2024) — PCB with multiplexers stacked with ESP32 development board</span><span class="lang-zh">第一版（2024 年 6 月）— 多路复用器 PCB 与 ESP32 开发板堆叠</span></figcaption>
+    <img src="{{ '/images/projects/smart-insole/finalsystem.png' | relative_url }}" alt="Final system overview — pressure sensor, insole FPC, and MCU" loading="lazy" />
+    <figcaption><span class="lang-en">Final system overview — pressure sensor array, insole FPC, and MCU</span><span class="lang-zh">最终系统概览——压力传感器阵列、鞋垫 FPC 和 MCU</span></figcaption>
+  </figure>
+</div>
+
+## <span class="lang-en">Hardware Iterations</span><span class="lang-zh">硬件迭代</span>
+
+<div class="project-gallery">
+  <figure>
+    <img src="{{ '/images/projects/smart-insole/IMG_5342.PNG' | relative_url }}" alt="Smart Insole Ver1 — PCB with multiplexers and ESP32" loading="lazy" />
+    <figcaption><span class="lang-en">Ver1 (June 2024) — multiplexer PCB stacked with ESP32 dev board</span><span class="lang-zh">第一版（2024 年 6 月）— 多路复用器 PCB 与 ESP32 开发板堆叠</span></figcaption>
   </figure>
   <figure>
-    <img src="/images/projects/smart-insole/insole_pcb1-5.png" alt="Smart Insole Ver2 — compact PCB with integrated ESP32" />
-    <figcaption><span class="lang-en">Ver2 (Apr 2025) — Integrated ESP32 chip on a compact single-board design with IMU</span><span class="lang-zh">第二版（2025 年 4 月）— 集成 ESP32 芯片的紧凑单板设计，含 IMU</span></figcaption>
+    <img src="{{ '/images/projects/smart-insole/insole_pcb1-5.png' | relative_url }}" alt="Smart Insole Ver2 — compact integrated PCB" loading="lazy" />
+    <figcaption><span class="lang-en">Ver2 (Apr 2025) — integrated ESP32 on compact single-board with IMU</span><span class="lang-zh">第二版（2025 年 4 月）— 集成 ESP32 芯片的紧凑单板设计，含 IMU</span></figcaption>
   </figure>
 </div>
 
@@ -44,11 +53,11 @@ cover: /images/projects/smart-insole/insole_pcb1-5.png
 
 <div class="project-gallery">
   <figure>
-    <img src="/images/projects/smart-insole/IMG_0750.jpg" alt="PCB soldering under microscope" />
-    <figcaption><span class="lang-en">SMD soldering under microscope in the lab</span><span class="lang-zh">实验室显微镜下的 SMD 焊接</span></figcaption>
+    <img src="{{ '/images/projects/smart-insole/IMG_0750.jpg' | relative_url }}" alt="PCB soldering under microscope" loading="lazy" />
+    <figcaption><span class="lang-en">SMD soldering under microscope</span><span class="lang-zh">显微镜下的 SMD 焊接</span></figcaption>
   </figure>
   <figure>
-    <img src="/images/projects/smart-insole/IMG_2990.jpg" alt="Microscope view of BLE chip" />
-    <figcaption><span class="lang-en">Microscope inspection of the BLE module</span><span class="lang-zh">显微镜下的 BLE 模块检查</span></figcaption>
+    <img src="{{ '/images/projects/smart-insole/IMG_2990.jpg' | relative_url }}" alt="Microscope view of BLE chip" loading="lazy" />
+    <figcaption><span class="lang-en">Microscope inspection of the MCU</span><span class="lang-zh">显微镜下的 MCU 检查</span></figcaption>
   </figure>
 </div>

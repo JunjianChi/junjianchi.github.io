@@ -11,34 +11,33 @@ show_title: false
 <div class="about-bio">
   <p class="lang-en">
     I am a MRes student at the EPSRC CDT in Sensor Technologies
-    at the University of Cambridge.
-    My current research focuses on <strong>robotics perception and planning</strong>, exploring how
-    sensor technologies and embodied learning can enable robots to better perceive and interact
-    with the physical world.
+    at the University of Cambridge, supervised by
+    <a href="https://elliottwu.com/" target="_blank" rel="noopener">Dr. Elliott Wu</a>.
+    My current research focuses on <strong>real-to-sim-to-real transfer for robotic manipulation</strong>, investigating how to reconstruct object with high physical fidelity in simulation and transfer learned policies to real-world tactile sensors for dexterous manipulation.
   </p>
   <p class="lang-zh">
-    我目前就读于剑桥大学 EPSRC 传感器技术博士培训中心。
-    我目前的研究方向是<strong>机器人感知与规划</strong>，探索传感器技术和具身学习如何使机器人更好地感知和交互物理世界。
+    我目前就读于剑桥大学 EPSRC 传感器技术博士培训中心，导师是
+    <a href="https://elliottwu.com/" target="_blank" rel="noopener">Elliott Wu 博士</a>。
+    我目前的研究方向是<strong>机器人操作的 Real-to-Sim-to-Real 迁移</strong>，探索如何在仿真中生成具有物理保真度的物体数据，并将学习到的策略迁移到真实的触觉力传感器上以实现灵巧操作。
   </p>
 
   <p class="lang-en">
     Previously, I received my BEng in Electrical &amp; Electronic Engineering from
     University College London (UCL), supervised by
     <a href="https://profiles.ucl.ac.uk/45781" target="_blank" rel="noopener">Dr. Yu Wu</a>,
-    where my work spanned wearable sensing, human pose estimation, and biomedical circuit design.
+    where my work spanned wearable tactile sensing, human pose estimation, and biomedical circuit design.
   </p>
   <p class="lang-zh">
     此前，我在伦敦大学学院 (UCL) 获得了电气与电子工程学士学位，导师是
     <a href="https://profiles.ucl.ac.uk/45781" target="_blank" rel="noopener">吴宇博士</a>，
-    本科期间的研究涉及可穿戴传感、人体姿态估计和生物医学电路设计。
+    本科期间的研究涉及可穿戴触觉传感、人体姿态估计和生物医学电路设计。
   </p>
 
   <p class="lang-en">
-    Apart from research, I enjoy playing guitar (fingerstyle) — you can hear one of my recordings
-    by clicking the ♪ button in the top right corner. Career Plan B is probably to make guitars.
+    Apart from research, I enjoy playing fingerstyle guitar — click ♪ in the top right to have a listen!
   </p>
   <p class="lang-zh">
-    学术之外，我喜欢弹指弹吉他——点击右上角的 ♪ 按钮可以听我弹的一首曲子。Plan B 是去做一名制琴师，毕竟总得有人来造吉他吧？
+    学术之外，我还喜欢弹指弹吉他。点击右上角的 ♪ 可以听一首我弹的曲子！
   </p>
 </div>
 
@@ -137,4 +136,28 @@ show_title: false
       </div>
     </div>
   </div>
+</section>
+
+<!-- AWARDS & GRANTS -->
+<section class="home-section">
+  <h2 class="home-section-title">
+    <span class="lang-en">Awards &amp; Grants</span>
+    <span class="lang-zh">荣誉与资助</span>
+  </h2>
+  <ul class="highlight-list">
+    <li>
+      <span class="hl-date">2026</span>
+      <span class="hl-text">
+        <span class="lang-en"><a href="https://ieee-cas.org/award/student-awards/ieee-circuits-and-systems-flagship-society-student-travel-grants" target="_blank" rel="noopener">IEEE Circuits and Systems Society Student Travel Grant</a> ($1,500)</span>
+        <span class="lang-zh"><a href="https://ieee-cas.org/award/student-awards/ieee-circuits-and-systems-flagship-society-student-travel-grants" target="_blank" rel="noopener">IEEE 电路与系统学会学生旅行资助</a> ($1,500)</span>
+      </span>
+    </li>
+    <li>
+      <span class="hl-date">2024</span>
+      <span class="hl-text">
+        <span class="lang-en">1st Place (UK Chapter), <a href="https://ieee-cas.org/post/announcement/2023-2024-cass-student-design-competition" target="_blank" rel="noopener">2023-2024 IEEE CASS Student Design Competition</a></span>
+        <span class="lang-zh"><a href="https://ieee-cas.org/post/announcement/2023-2024-cass-student-design-competition" target="_blank" rel="noopener">2023-2024 IEEE CASS 学生设计竞赛</a> UK Chapter 第一名</span>
+      </span>
+    </li>
+  </ul>
 </section>

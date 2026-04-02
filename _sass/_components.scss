@@ -68,6 +68,7 @@
   font-family: var(--font-sans);
   transition: all var(--transition);
   &:hover { color: var(--text-primary); border-color: var(--text-muted); }
+  &:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 }
 
 .music-toggle.playing {
@@ -109,21 +110,21 @@
 // PAGE LAYOUT: Sidebar + Content
 // ============================================
 .page-main {
-  padding-top: calc(var(--nav-height) + 48px);
-  padding-bottom: 48px;
+  padding-top: calc(var(--nav-height) + 32px);
+  padding-bottom: 36px;
   min-height: 100vh;
 }
 
 .page-grid {
   display: grid;
   grid-template-columns: var(--sidebar-width) 1fr;
-  gap: 56px;
+  gap: 40px;
   align-items: start;
 }
 
 .page-sidebar {
   position: sticky;
-  top: calc(var(--nav-height) + 48px);
+  top: calc(var(--nav-height) + 32px);
 }
 
 .page-content {
@@ -221,13 +222,13 @@
 .pub-list {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 16px;
 }
 
 .pub-card {
   display: flex;
-  gap: 20px;
-  padding: 20px 0;
+  gap: 16px;
+  padding: 14px 0;
   border-bottom: 1px solid var(--border-subtle);
   &:last-child { border-bottom: none; }
 }
@@ -268,22 +269,22 @@
 
 .pub-authors {
   font-size: 0.85rem;
-  color: var(--text-muted);
+  color: var(--text-secondary);
   margin-bottom: 4px;
   strong { color: var(--text-primary); font-weight: 600; }
 }
 
 .pub-venue {
   font-size: 0.82rem;
-  color: var(--accent);
+  color: var(--text-secondary);
   font-style: italic;
   margin-bottom: 4px;
 }
 
 .pub-award {
   font-size: 0.8rem;
-  font-weight: 600;
-  color: var(--accent);
+  font-weight: 400;
+  color: var(--text-secondary);
   margin-bottom: 4px;
 }
 
@@ -401,7 +402,7 @@
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 20px;
+  gap: 16px;
 }
 
 .project-card {
@@ -460,7 +461,7 @@
 
 .project-title {
   font-family: var(--font-serif);
-  font-size: 0.95rem;
+  font-size: 1rem;
   font-weight: 600;
   margin-bottom: 6px;
   line-height: 1.4;
@@ -612,8 +613,8 @@
 .project-gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 16px;
-  margin: 20px 0 28px;
+  gap: 12px;
+  margin: 14px 0 20px;
 
   figure {
     margin: 0;
@@ -636,8 +637,8 @@
 // SINGLE PAGE (individual publication/project/post)
 // ============================================
 .single-header {
-  margin-bottom: 32px;
-  padding-bottom: 20px;
+  margin-bottom: 22px;
+  padding-bottom: 14px;
   border-bottom: 1px solid var(--border-subtle);
 }
 
@@ -653,13 +654,13 @@
 }
 
 .single-body {
-  font-size: 0.95rem;
-  line-height: 1.85;
+  font-size: 0.92rem;
+  line-height: 1.65;
   color: var(--text-secondary);
 
-  h2 { font-size: 1.3rem; margin: 32px 0 16px; }
-  h3 { font-size: 1.1rem; margin: 24px 0 12px; }
-  p { margin-bottom: 16px; }
+  h2 { font-size: 1.3rem; margin: 22px 0 10px; }
+  h3 { font-size: 1.1rem; margin: 18px 0 8px; }
+  p { margin-bottom: 10px; }
   ul, ol { margin-bottom: 16px; padding-left: 24px; color: var(--text-secondary); }
   li { margin-bottom: 6px; }
   blockquote {
