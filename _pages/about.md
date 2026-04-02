@@ -147,14 +147,14 @@ show_title: false
   </h2>
   <ul class="highlight-list">
     <li>
-      <span class="hl-date">2026</span>
+      <span class="hl-date">2026.04</span>
       <span class="hl-text">
         <span class="lang-en"><a href="https://ieee-cas.org/award/student-awards/ieee-circuits-and-systems-flagship-society-student-travel-grants" target="_blank" rel="noopener">IEEE Circuits and Systems Society Student Travel Grant</a> ($1,500)</span>
         <span class="lang-zh"><a href="https://ieee-cas.org/award/student-awards/ieee-circuits-and-systems-flagship-society-student-travel-grants" target="_blank" rel="noopener">IEEE 电路与系统学会学生旅行资助</a> ($1,500)</span>
       </span>
     </li>
     <li>
-      <span class="hl-date">2024</span>
+      <span class="hl-date">2024.03</span>
       <span class="hl-text">
         <span class="lang-en">1st Place (UK Chapter), <a href="https://ieee-cas.org/post/announcement/2023-2024-cass-student-design-competition" target="_blank" rel="noopener">2023-2024 IEEE CASS Student Design Competition</a></span>
         <span class="lang-zh"><a href="https://ieee-cas.org/post/announcement/2023-2024-cass-student-design-competition" target="_blank" rel="noopener">2023-2024 IEEE CASS 学生设计竞赛</a> UK Chapter 第一名</span>
