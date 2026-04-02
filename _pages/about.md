@@ -95,6 +95,7 @@ show_title: false
         <div class="pub-links">
           <a href="https://ieeexplore.ieee.org/abstract/document/11044303/" class="pub-link" target="_blank"><span class="lang-en">Paper</span><span class="lang-zh">论文</span></a>
           <a href="https://github.com/JunjianChi/Pressure2Pose" class="pub-link" target="_blank"><span class="lang-en">Code</span><span class="lang-zh">代码</span></a>
+          <a href="https://www.linkedin.com/posts/yu-w-9692856b_iscas2025-wearables-sensors-activity-7335032303892533252-bRaL/" class="pub-link" target="_blank">Demo</a>
         </div>
       </div>
     </div>
